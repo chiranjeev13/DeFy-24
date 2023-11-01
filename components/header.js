@@ -3,6 +3,7 @@ import logo from "../assets/defy-logo.svg";
 import chat from "../assets/chat.svg";
 import Image from "next/image";
 import React from "react";
+
 import { useDencrypt } from "use-dencrypt-effect";
 const Example = ({ symbol }) => {
   const [value, setValue] = useDencrypt(symbol);

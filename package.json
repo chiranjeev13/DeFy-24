@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vidstack/player": "^1.6.5",
+    "@vidstack/player-react": "^1.6.5",
+    "@vidstack/react": "^1.5.0",
+    "lit": "^2.8.0",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",
-    "use-dencrypt-effect": "^2.0.0"
+    "use-dencrypt-effect": "^2.0.0",
+    "video-react": "^0.16.0"
   }
 }

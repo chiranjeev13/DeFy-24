@@ -29,6 +29,11 @@
   --card-border-rgb: 200, 200, 200;
 }
 
+.disp {
+  position: absolute;
+  z-index: 1;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
