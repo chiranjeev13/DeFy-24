@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Roboto MonoL;
+  src: url("../assets/RobotoMono-Light.ttf");
+}
+
+.body {
+  display: flex;
+  position: relative;
+  color: #99ff52;
+  font-family: Roboto MonoL;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  margin: 2rem 0rem 0rem 25rem;
+}
+
+.body_w {
+  color: white;
+}
