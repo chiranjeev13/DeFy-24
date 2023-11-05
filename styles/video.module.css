@@ -4,4 +4,8 @@
   border: none;
 }
 
-
+@media (max-width: 768px) {
+  .video {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}

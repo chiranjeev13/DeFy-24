@@ -14,7 +14,7 @@ function Video() {
         loop={true}
         autoplay={true}
         playbackRate={1.75}
-        aspectRatio=""
+        aspectRatio="9:16"
       >
         <MediaProvider />
       </MediaPlayer>
