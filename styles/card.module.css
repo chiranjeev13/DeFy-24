@@ -3,36 +3,45 @@
   src: url("../assets/RobotoMono-Light.ttf");
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .card {
-  font-family: Roboto MonoL;
-  border: 0.1rem solid;
-  border-color: white;
-  width: fit-content;
-  height: fit-content;
+  font-family: "Roboto MonoL", monospace;
+  border: 0.1rem solid white;
+  width: 100%;
   max-width: 50%;
-  max-height: 50%;
   padding: 1rem;
   margin: 4rem 1rem 1rem 1rem;
-  transition: all 1;
+  transition: all 1s;
   cursor: pointer;
   letter-spacing: 0.01rem;
   box-shadow: 0.1rem 0.1rem 1rem lawngreen;
 }
 
 .card:hover {
-  border: 0.1rem solid;
+  border: 0.1rem solid rgb(57, 57, 57);
   background: rgb(239, 255, 229);
   color: black;
-  border-color: rgb(57, 57, 57);
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
   max-width: 50%;
-  max-height: 50%;
   padding: 1rem;
   margin: 4rem 1rem 1rem 1rem;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 
 .card_content {
   font-size: small;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    max-width: 80%;
+    margin: 2rem 1rem 1rem 1rem;
+  }
 }

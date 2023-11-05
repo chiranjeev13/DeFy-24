@@ -3,9 +3,9 @@
   src: url("../assets/RobotoMono-Thin.ttf");
 }
 
-.body {
+.bodyy {
   display: flex;
-  margin: 5rem 0rem 0rem 15rem;
+  margin: 5rem 0rem 0rem;
   text-align: start;
   flex-direction: column;
   color: #fff;
@@ -15,4 +15,12 @@
   font-weight: 200;
   letter-spacing: -0.23rem;
   text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .bodyy {
+    font-size: 1.9rem;
+  }
 }

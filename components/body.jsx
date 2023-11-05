@@ -6,10 +6,11 @@ import Card from "./card";
 function Body() {
   return (
     <>
-      <div className={styles.body}>
-        Core Concept of
-        <div>DeFy</div>
+      <div className={styles.bo}>
+      <div className={styles.bodyy}>
+        Core Concept of DeFy
         <Card />
+      </div>
       </div>
     </>
   );

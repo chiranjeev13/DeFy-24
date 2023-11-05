@@ -6,22 +6,19 @@ import { MediaPlayer, MediaProvider } from "@vidstack/react";
 
 function Video() {
   return (
-    <>
-      <div className={styles.video}>
-        <MediaPlayer
-          className={styles.video}
-          src="https://upcdn.io/FW25bjZ/raw/defypromo.mp4"
-          muted={true}
-          loop={true}
-          autoplay={true}
-          playbackRate={1.75}
-          aspectRatio=""
-          xx
-        >
-          <MediaProvider />
-        </MediaPlayer>
-      </div>
-    </>
+    <div className={styles.videoWrapper}>
+      <MediaPlayer
+        className={styles.video}
+        src="https://upcdn.io/FW25bjZ/raw/defypromo.mp4"
+        muted={true}
+        loop={true}
+        autoplay={true}
+        playbackRate={1.75}
+        aspectRatio=""
+      >
+        <MediaProvider />
+      </MediaPlayer>
+    </div>
   );
 }
 
