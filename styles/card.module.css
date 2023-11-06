@@ -16,7 +16,8 @@
     border: 0.1rem solid;
     border-color: white;
     width: 30rem;
-    height: 30rem;
+    min-height: 30rem;
+    max-height: fit-content;
     padding: 1rem;
     margin: 4rem 1rem 1rem 1rem;
     transition: all 1;
@@ -45,4 +46,21 @@
     height: 1.85563rem;
     flex-shrink: 0;
     margin: 0rem 0rem 0rem 25rem;
+    animation: blinkAnimation 1s infinite ; 
   }
+
+  @media (max-width: 768px) {
+    .clipboard {
+      margin: 0rem 0rem 0rem 16.5rem;
+    }
+  }
+  
+  @keyframes blinkAnimation {
+    0%, 100% {
+      background-color: transparent; /* Start and end with transparent background */
+    }
+    50% {
+      background-color: white; /* Blinking state with white background */
+    }
+  }
+  
