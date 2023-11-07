@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <Video />
-      <Headerr />
+      {/* <Headerr /> */}
       <TickerTape />
       <Body />
       <FAQ /> 
