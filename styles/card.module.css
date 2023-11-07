@@ -17,7 +17,7 @@
   font-family: Roboto MonoL;
   border: 0.1rem solid;
   border-color: white;
-  width: 30rem;
+  width: 50rem;
   min-height: 30rem;
   max-height: fit-content;
   padding: 1rem;
@@ -36,7 +36,7 @@
 }
 
 .card_content {
-  font-size: medium;
+  font-size: large;
 }
 
 .clipboard {
