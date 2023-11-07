@@ -1,8 +1,9 @@
 import Headerr from "../components/Headerr";
-import Header from "../components/headereader";
+import Header from "../components/header";
 import Video from "../components/video";
 import TickerTape from "../components/ticker";
 import Body from "../components/body";
+import FAQ from "@/components/faq";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <Video />
       <Headerr />
       <TickerTape />
-      <Body /> 
+      <Body />
+      <FAQ /> 
     </>
   );
 }

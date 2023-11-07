@@ -5,62 +5,68 @@
   }
 }
 
-
 @font-face {
-    font-family: Roboto MonoL;
-    src: url("../assets/RobotoMono-Light.ttf");
-  }
-  
-  .card {
-    font-family: Roboto MonoL;
-    border: 0.1rem solid;
-    border-color: white;
-    width: 30rem;
-    min-height: 30rem;
-    max-height: fit-content;
-    padding: 1rem;
-    margin: 4rem 1rem 1rem 1rem;
-    transition: all 1;
-    cursor: pointer;
-    letter-spacing: 0.01rem;
-    box-shadow: 0.1rem 0.1rem 1rem lawngreen;
-  }
-  
-  .clipboard:hover {
-    border: 0.1rem solid;
-    background: rgb(239, 255, 229);
-    border-color: rgb(57, 57, 57);
-    transition: all 3;
-  }
-  
-  .card_content {
-    font-size: medium;
-  }
-  
-  .clipboard {
-    position: absolute;
-    border: 0.1rem solid;
-    border-color: white;
-    box-shadow: 0.1rem 0.1rem 1rem lawngreen;
-    width: 1.58125rem;
-    height: 1.85563rem;
-    flex-shrink: 0;
-    margin: 0rem 0rem 0rem 25rem;
-    animation: blinkAnimation 1s infinite ; 
-  }
+  font-family: Roboto MonoL;
+  src: url("../assets/RobotoMono-Light.ttf");
+}
 
-  @media (max-width: 768px) {
-    .clipboard {
-      margin: 0rem 0rem 0rem 16.5rem;
-    }
+.card {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  font-family: Roboto MonoL;
+  border: 0.1rem solid;
+  border-color: white;
+  width: 30rem;
+  min-height: 30rem;
+  max-height: fit-content;
+  padding: 1rem;
+  margin: 4rem 1rem 1rem 1rem;
+  transition: all 1;
+  cursor: pointer;
+  letter-spacing: 0.01rem;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+}
+
+.clipboard:hover {
+  border: 0.1rem solid;
+  background: rgb(239, 255, 229);
+  border-color: rgb(57, 57, 57);
+  transition: all 3;
+}
+
+.card_content {
+  font-size: medium;
+}
+
+.clipboard {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  border: 0.1rem solid;
+  border-color: white;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+  width: 1.58125rem;
+  height: 1.85563rem;
+  align-self: flex-end;
+  justify-content: end;
+  flex-shrink: 0;
+  animation: blinkAnimation 1s infinite;
+}
+
+@media (max-width: 768px) {
+  .clipboard {
+    position: relative;
+    margin: 0rem 0rem 0rem 16.5rem;
   }
-  
-  @keyframes blinkAnimation {
-    0%, 100% {
-      background-color: transparent; /* Start and end with transparent background */
-    }
-    50% {
-      background-color: white; /* Blinking state with white background */
-    }
+}
+
+@keyframes blinkAnimation {
+  0%,
+  100% {
+    background-color: transparent;
   }
-  
+  50% {
+    background-color: white;
+  }
+}
