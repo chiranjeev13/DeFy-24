@@ -44,7 +44,7 @@ const FAQ = () => {
   };
 
   return (
-    <div>
+    <section id="faq">
       <div className={styles.heading}>
         <h1>Frequently Asked Questions</h1>
       </div>
@@ -78,7 +78,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

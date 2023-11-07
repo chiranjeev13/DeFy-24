@@ -6,12 +6,14 @@ import Card from "./card";
 function Body() {
   return (
     <>
-      <div className={styles.bo}>
-      <div className={styles.bodyy}>
-        Core Concept of DeFy
-        <Card />
-      </div>
-      </div>
+      <section id="home">
+        <div className={styles.bo}>
+          <div className={styles.bodyy}>
+            Core Concept of DeFy
+            <Card />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
