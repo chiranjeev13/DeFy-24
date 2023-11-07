@@ -1,5 +1,5 @@
 import Headerr from "../components/Headerr";
-import Header from "../components/Header";
+import Header from "../components/headereader";
 import Video from "../components/video";
 import TickerTape from "../components/ticker";
 import Body from "../components/body";
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <Video />
-      {/* <Headerr /> */}
+      <Headerr />
       <TickerTape />
       <Body /> 
     </>
