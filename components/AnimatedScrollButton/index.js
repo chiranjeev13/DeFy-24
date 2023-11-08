@@ -7,7 +7,7 @@ function AnimatedScrollButton({ onClick }) {
             <div className={styles.mouse} onClick={onClick}>
                 <div className={styles.cursor} />
             </div>
-            <p className="text-sm">scroll down</p>
+            <p className="text-sm hidden lg:block">scroll down</p>
         </div>
     );
 }

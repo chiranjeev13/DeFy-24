@@ -6,7 +6,7 @@ function TickerTape() {
   const loop = [1];
   return (
     <section id="ticker">
-      <Ticker duration={13} >
+      <Ticker duration={13}>
         {loop.map((item, index) => (
           <div key={index} className={styles.body}>
             Announcing&nbsp;

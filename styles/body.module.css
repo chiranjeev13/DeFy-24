@@ -22,6 +22,13 @@
 @media (max-width: 768px) {
   .bodyy {
     font-size: 1.9rem;
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 777px) and (max-width: 1111px) {
+  .bodyy {
+    margin-top: 20rem;
   }
 }
 
@@ -31,5 +38,4 @@
   align-items: center;
   transform: rotate(101deg);
   width: fit-content;
-
 }

@@ -15,7 +15,7 @@ function Header() {
     <>
       <div className={styles.header}>
         <div className={styles.placements}>
-          <Image src={logo}></Image>
+          <Image src={logo} className={styles.logoImage}></Image>
           <div className={styles.tabs}>
             <a href="#home">
               <div className={styles.buttons}>
@@ -37,11 +37,11 @@ function Header() {
                 . <Example symbol={"FAQ"} />
               </div>
             </a>
-            <div className={styles.chat}>
-              <Image src={chat} />
-              <div className={styles.chat_text}>
-                <Example symbol={"EVENT Assistance"} />{" "}
-              </div>
+          </div>
+          <div className={styles.chat}>
+            <Image src={chat} />
+            <div className={styles.chat_text}>
+              <Example symbol={"EVENT Assistance"} />{" "}
             </div>
           </div>
         </div>
