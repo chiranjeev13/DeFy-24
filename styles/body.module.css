@@ -5,7 +5,7 @@
 
 .bodyy {
   display: flex;
-  margin: 5rem 0rem 0rem;
+  margin: 5rem 0rem;
   text-align: start;
   flex-direction: column;
   color: #fff;
@@ -22,13 +22,7 @@
 @media (max-width: 768px) {
   .bodyy {
     font-size: 1.9rem;
-    margin-top: 9rem;
-  }
-}
-
-@media (min-width: 777px) and (max-width: 1111px) {
-  .bodyy {
-    margin-top: 20rem;
+    margin-top: 7rem;
   }
 }
 
