@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Card from "./card"
+import Eventcard from "./event";
 import styles from "../styles/body.module.css";
 
 function ScrollSection() {
@@ -48,16 +48,13 @@ function ScrollSection() {
             <div ref={triggerRef}>
                 <div ref={sectionRef} className="scroll-section-inner">
                     <div className="scroll-section">
-                        <Card/>
+                        <Eventcard />
                     </div>
                     <div className="scroll-section">
-                        <Card />
                     </div>
                     <div className="scroll-section">
-                        <Card />
                     </div>
                     <div className="scroll-section">
-                        <Card />
                     </div>
                 </div>
             </div>

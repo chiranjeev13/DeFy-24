@@ -17,26 +17,26 @@ function Header() {
         <div className={styles.placements}>
           <Image src={logo}></Image>
           <div className={styles.tabs}>
-            <div className={styles.buttons}>
-              <a href="#home">
+            <a href="#home">
+              <div className={styles.buttons}>
                 . <Example symbol={"HOME"} />
-              </a>
-            </div>
-            <div className={styles.buttons}>
-              <a href="#community">
-              . <Example symbol={"COMMUNITY"} />
-              </a>
-            </div>
-            <div className={styles.buttons}>
-              <a href="#timeline">
-              . <Example symbol={"EVENT TIMELINE"} />
-              </a>
-            </div>
-            <div className={styles.buttons}>
-              <a href="#faq">
-              . <Example symbol={"FAQ"} />
-              </a>
-            </div>
+              </div>
+            </a>
+            <a href="#community">
+              <div className={styles.buttons}>
+                . <Example symbol={"COMMUNITY"} />
+              </div>
+            </a>
+            <a href="#timeline">
+              <div className={styles.buttons}>
+                . <Example symbol={"EVENT TIMELINE"} />
+              </div>
+            </a>
+            <a href="#faq">
+              <div className={styles.buttons}>
+                . <Example symbol={"FAQ"} />
+              </div>
+            </a>
             <div className={styles.chat}>
               <Image src={chat} />
               <div className={styles.chat_text}>
