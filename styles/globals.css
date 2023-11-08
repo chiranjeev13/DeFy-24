@@ -84,8 +84,8 @@ a {
 }
 
 .scroll-section {
-  height: 100vh;
-  width: 100vw;
+  height: max-content;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;

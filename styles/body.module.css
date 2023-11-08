@@ -24,3 +24,12 @@
     font-size: 1.9rem;
   }
 }
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(101deg);
+  width: fit-content;
+
+}
