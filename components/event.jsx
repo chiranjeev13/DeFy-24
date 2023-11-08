@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/event.module.css";
-
+import Countdown from "react-countdown";
 function eventcard({ body, title }) {
   return (
     <>
@@ -10,6 +10,7 @@ function eventcard({ body, title }) {
         reprehenderit nostrum, esse ullam ad libero quisquam, magni, incidunt
         aspernatur repellendus impedit. Sapiente consequatur rerum alias
         doloremque modi ducimus omnis! Aut.
+        <Countdown date={Date.now() + 10000} />
       </div>
     </>
   );
