@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/faq.module.css";
+import styles2 from "../styles/body.module.css";
 import Image from "next/image";
 import { useDencrypt } from "use-dencrypt-effect";
 const Example = ({ symbol }) => {
@@ -45,7 +46,7 @@ const FAQ = () => {
 
   return (
     <section id="faq">
-      <div className={styles.heading}>
+      <div className={styles2.bodyy}>
         <h1>Frequently Asked Questions</h1>
       </div>
       <div className={styles.questions}>
