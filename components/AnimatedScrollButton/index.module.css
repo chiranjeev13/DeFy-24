@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Roboto MonoL;
+    src: url("../../assets/RobotoMono-Light.ttf");
+}
+
+
+.wrapper {
+    /* @apply mt-24 flex items-center justify-center flex-col; */
+    /* margin-top: 6rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 20;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    position: absolute;
+    bottom: 2%;
+    right: 3rem;
+    font-family: Roboto MonoL;
+}
+
+.mouse {
+
+    height: 35px;
+    width: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    /* @apply p-[1.7rem] px-[1.6rem] box-content flex justify-center mb-4 cursor-pointer rounded-full relative; */
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem
+        /* 16px */
+    ;
+    cursor: pointer;
+    border-radius: 9999px;
+    position: relative;
+    z-index: 20;
+    padding: 1.7rem;
+    padding-left: 1.6rem
+        /* 25.6px */
+    ;
+    padding-right: 1.6rem
+        /* 25.6px */
+    ;
+
+    /* @apply sm:p-[1.5rem] sm:px-[1.3rem] sm:h-[25px]; */
+    transition: all 0.2s;
+}
+
+.mouse:hover {
+    /* @apply border-blue; */
+    box-shadow: 0px 0px 14px 1px #99ff53;
+}
+
+.cursor {
+    height: 14px;
+    width: 4px;
+    animation: scrollDown 2.1s infinite forwards;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    border-radius: 9999px;
+    position: absolute;
+    top: 1.5rem;
+    background-color: aliceblue;
+    /* @apply rounded-full bg-primary-light absolute top-6;
+    @apply sm:h-[12px] sm:w-[3px]; */
+    transition: background-color 0.2s;
+}
+
+.mouse:hover .cursor {
+    /* @apply bg-blue; */
+    animation: none;
+}
+
+@keyframes scrollDown {
+    0% {
+        /* @apply top-1/4 opacity-100; */
+        top: 25%;
+        opacity: 1;
+    }
+
+    100% {
+        /* @apply top-1/2 opacity-0; */
+        top: 50%;
+        opacity: 0;
+    }
+}

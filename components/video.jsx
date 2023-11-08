@@ -3,6 +3,7 @@ import styles from "../styles/video.module.css";
 import "@vidstack/react/player/styles/default/theme.css";
 import "@vidstack/react/player/styles/default/layouts/video.css";
 import { MediaPlayer, MediaProvider } from "@vidstack/react";
+import AnimatedScrollButton from '@/components/AnimatedScrollButton';
 
 function Video() {
   return (
@@ -17,6 +18,9 @@ function Video() {
         aspectRatio="9:16"
       >
         <MediaProvider />
+        <AnimatedScrollButton onClick={() =>
+          document.getElementById('ticker').scrollIntoView()
+        } />
       </MediaPlayer>
     </div>
   );
