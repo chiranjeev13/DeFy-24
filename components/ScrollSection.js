@@ -36,9 +36,9 @@ function ScrollSection() {
     }, []);
 
     return (
-        <section className="scroll-section-outer">
+        <section className="scroll-section-outer" id="timeline">
             <div className={styles.bodyy}>
-                Core Concept of DeFy
+               Event Timeline
             </div>
             {/* The section up act just as a wrapper. If the trigger (below) is the
       first jsx element in the component, you get an error on route change */}
