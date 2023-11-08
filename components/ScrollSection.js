@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Eventcard from "./event";
 import styles from "../styles/body.module.css";
-import arrow from "../assets/arrow.svg"
+import arrow from "../assets/arrow.svg";
 import Image from "next/image";
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -49,14 +49,14 @@ function ScrollSection() {
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
-            <Eventcard />
+            <Eventcard date={"2023-11-09T17:02:03"} />{" "}
           </div>
           <div className={styles.line}>
-          <Image src={arrow}/>
+            <Image src={arrow} />
           </div>
-          
+
           <div className="scroll-section">
-            <Eventcard />
+            <Eventcard date={"2023-11-09T17:02:03"} />
           </div>
           <div className="scroll-section"></div>
           <div className="scroll-section"></div>

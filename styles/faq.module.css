@@ -1,80 +1,92 @@
 @font-face {
-    font-family: Roboto MonoX;
-    src: url("../assets/RobotoMono-Thin.ttf");
+  font-family: Roboto MonoX;
+  src: url("../assets/RobotoMono-Thin.ttf");
 }
 
 @font-face {
-    font-family: Roboto MonoP;
-    src: url("../assets/RobotoMono-Light.ttf");
+  font-family: Roboto MonoP;
+  src: url("../assets/RobotoMono-Light.ttf");
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    font-family: Roboto MonoX;
-    text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  font-family: Roboto MonoX;
+  text-transform: uppercase;
 }
 
 .questions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: start;
-    margin-bottom: 7%;
-    margin: 1rem 5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 7%;
+  margin: 1rem 5rem 0rem 0rem;
 }
 
 .inner_questions {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 1.4rem;
-    padding: 1rem;
-    font-family: Roboto MonoP;
-    font-style: normal;
-    text-transform: uppercase;
-    cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: fit-content;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-family: Roboto MonoP;
+  font-style: normal;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .inner_questions hr {
-    border-color: lawngreen;
-    width: 60%;
+  border-color: lawngreen;
+  width: 60%;
 }
 
 .inner_questions h1:hover {
-    color: lawngreen;
-    transition: all 0.5s;
+  color: lawngreen;
+  transition: all 0.5s;
 }
 
 .questionContainer {
-    position: relative;
-    
+  position: relative;
+}
+
+.answer {
+  margin-bottom: 5%;
+  width: auto;
+  min-width: 35rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-family: Roboto MonoP;
+  font-style: normal;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .popup {
-    display: none;
-    position: absolute;
-    border: 0.1rem solid white;
-    background-color: black;
-    box-shadow: 0.1rem 0.1rem 1rem lawngreen;
-    color: white;
-    z-index: 1;
-    width: 50%;
-    transition: opacity 0.3s ease-in-out;
-    font-family: Roboto Mono;
-    letter-spacing: 0.01rem;
-    font-size: larger;
-    letter-spacing: 0rem;
-    text-transform: none;
+  display: none;
+  position: absolute;
+  border: 0.1rem solid white;
+  background-color: black;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+  color: white;
+  z-index: 1;
+  width: fit-content;
+  transition: opacity 0.3s ease-in-out;
+  font-family: Roboto Mono;
+  letter-spacing: 0.01rem;
+  font-size: larger;
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
 .questionContainer:hover .popup {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .questionHeader {
-    font-family: Roboto MonoP;
+  font-family: Roboto MonoP;
 }

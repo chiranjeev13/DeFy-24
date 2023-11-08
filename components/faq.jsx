@@ -68,7 +68,7 @@ const FAQ = () => {
                 style={{ left: mouseX, top: mouseY }}
               >
                 {currentQuestion && (
-                  <div className={styles.inner_questions}>
+                  <div className={styles.answer}>
                     <p>
                       <TypeAnimation sequence={[currentQuestion]} speed={90} />
                     </p>
