@@ -32,6 +32,11 @@
   --card-border-rgb: 200, 200, 200;
 }
 
+@font-face {
+  font-family: "Roboto MonoL";
+  src: url("../assets/RobotoMono-Light.ttf");
+}
+
 .disp {
   position: absolute;
   z-index: 1;

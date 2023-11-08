@@ -6,6 +6,7 @@ import Body from "../components/body";
 import FAQ from "@/components/faq";
 import ScrollSection from "@/components/ScrollSection";
 import Sponsorship from "@/components/Sponsorship";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ScrollSection/>
       <Sponsorship /> 
       <FAQ /> 
+      <Footer/>
     </>
   );
 }
