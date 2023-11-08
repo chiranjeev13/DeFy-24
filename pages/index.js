@@ -5,6 +5,7 @@ import TickerTape from "../components/ticker";
 import Body from "../components/body";
 import FAQ from "@/components/faq";
 import ScrollSection from "@/components/ScrollSection";
+import Sponsorship from "@/components/Sponsorship";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Body />
       <FAQ /> 
       <ScrollSection/>
+      <Sponsorship /> 
       <FAQ /> 
     </>
   );
