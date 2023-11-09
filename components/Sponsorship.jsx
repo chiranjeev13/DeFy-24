@@ -11,9 +11,15 @@ const Sponsorship = () => {
     <section id="sponsorship">
       <div className={styles.bodyy}>Sponsorship</div>
       <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-[6rem] py-12 px-4 mb-6">
-        <Image src={polygon} alt="POLYGON LOGO" />
-        <Image src={replit} alt="REPLIT LOGO" />
-        <Image src={devfolio} alt="DEVFOLIO LOGO" />
+        <a href="https://polygon.technology/">
+          <Image src={polygon} alt="POLYGON LOGO" />
+        </a>
+        <a href="https://replit.com ">
+          <Image src={replit} alt="REPLIT LOGO" />
+        </a>
+        <a href="https://devfolio.co">
+          <Image src={devfolio} alt="DEVFOLIO LOGO" />
+        </a>
         <a
           class="flex items-center justify-center text-gray-400 hover:text-[#98fa51] transition-colors duration-300 ease-in-out"
           href="https://ploi.io"
