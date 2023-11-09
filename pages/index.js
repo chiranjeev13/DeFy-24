@@ -7,19 +7,29 @@ import FAQ from "@/components/faq";
 import ScrollSection from "@/components/ScrollSection";
 import Sponsorship from "@/components/Sponsorship";
 import Footer from "@/components/footer";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
       <Header />
       <Video />
       <TickerTape />
       <Body />
-      <FAQ /> 
-      <ScrollSection/>
-      <Sponsorship /> 
-      <FAQ /> 
-      <Footer/>
+      <ScrollSection />
+      <Sponsorship />
+      <FAQ />
+      <Footer />
     </>
   );
 }

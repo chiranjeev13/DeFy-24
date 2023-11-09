@@ -49,14 +49,20 @@ function ScrollSection() {
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
-            <Eventcard date={"2023-11-09T17:02:03"} />{" "}
+            <Eventcard
+              date={"2023-11-10T23:00:03"}
+              suppressHydrationWarning={true}
+            />{" "}
           </div>
           <div className={styles.line}>
             <Image src={arrow} />
           </div>
 
           <div className="scroll-section">
-            <Eventcard date={"2023-11-09T17:02:03"} />
+            <Eventcard
+              date={"2023-11-10T17:02:03"}
+              suppressHydrationWarning={true}
+            />
           </div>
           <div className="scroll-section"></div>
           <div className="scroll-section"></div>

@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/card.module.css";
 import logo from "../assets/defy-logo.svg";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { MediaPlayer, MediaProvider } from "@vidstack/react";
 
 function Card() {
   const [cardChange, setCardChange] = useState(0);
-
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
-    <>
+    <div className={styles.layout}>
       {cardChange === 0 && (
         <div className={styles.card}>
           <div
@@ -34,6 +44,12 @@ function Card() {
               speed={95}
             />
           </p>
+          <div
+            className="apply-button"
+            data-hackathon-slug="defy24"
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
         </div>
       )}
 
@@ -45,7 +61,7 @@ function Card() {
           ></div>
           <Image src={logo} />
           <p className={styles.card_content}>
-          <TypeAnimation
+            <TypeAnimation
               sequence={[
                 `DeFy 24 is a gripping 36-hour hackathon that unites Web3 enthusiasts
                 and aspiring`,
@@ -56,7 +72,18 @@ function Card() {
           </p>
         </div>
       )}
-    </>
+      <MediaPlayer
+        className={styles.video}
+        src="https://upcdn.io/FW25bjZ/raw/glow.webm"
+        muted={true}
+        loop={true}
+        autoplay={true}
+        playbackRate={1.75}
+        aspectRatio="1:1"
+      >
+        <MediaProvider />
+      </MediaPlayer>
+    </div>
   );
 }
 
