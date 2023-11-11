@@ -4,17 +4,21 @@ import logo from "../assets/defy-logo.svg";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { MediaPlayer, MediaProvider } from "@vidstack/react";
+import useSound from "use-sound";
 
 function Card() {
   const [cardChange, setCardChange] = useState(0);
-  
+  const [play] = useSound("https://www.fesliyanstudios.com/play-mp3/387");
   return (
     <div className={styles.layout}>
       {cardChange === 0 && (
         <div className={styles.card}>
           <div
             className={styles.clipboard}
-            onClick={() => setCardChange(1)}
+            onClick={() => {
+              setCardChange(1) && play && play()
+
+            }}
           ></div>
           <Image src={logo} />
           <p className={styles.card_content}>
@@ -35,7 +39,6 @@ function Card() {
               speed={95}
             />
           </p>
-          
         </div>
       )}
 

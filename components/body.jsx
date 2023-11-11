@@ -22,7 +22,7 @@ function Body() {
             <div
               className="apply-button"
               data-hackathon-slug="defy24"
-              data-button-theme="light"
+              data-button-theme="dark-inverted"
               style={{ height: "44px", width: "312px" }}
             ></div>
             <Card />
