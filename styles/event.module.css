@@ -1,35 +1,40 @@
 .card {
-    display: flex; 
-    flex-direction: column; 
-    border-style: dashed;
-    align-items: flex-start;
-    font-family: Roboto MonoL;
-    border: 0.1rem solid;
-    border-color: black;
-    width: 50rem;
-    min-height: 30rem;
-    max-height: fit-content;
-    padding: 1rem;
-    margin: 4rem 1rem 1rem 10rem;
-    transition: all 1;
-    cursor: pointer;
-    color: black;
-    background-color: #99ff52;
-    letter-spacing: 0.01rem;
-    box-shadow: 0.1rem 0.1rem 1rem lawngreen;
-  }
+  display: flex;
+  flex-direction: column;
+  border-style: dashed;
+  align-items: flex-start;
+  font-family: Roboto MonoL;
+  border: 0.1rem solid;
+  border-color: black;
+  width: 50rem;
+  min-height: 30rem;
+  max-height: fit-content;
+  padding: 1rem;
+  margin: 4rem 1rem 1rem 10rem;
+  transition: all 1;
+  cursor: pointer;
+  color: black;
+  background-color: #99ff52;
+  letter-spacing: 0.01rem;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+}
 
-  .countdown
-  {
-    position: relative;
-    margin: 3rem 0rem 0rem 1rem;
-    font-size: 2.5rem;
+.countdown {
+  position: relative;
+  margin: 3rem 0rem 0rem 1rem;
+  font-size: 2.5rem;
+}
 
-  }
+.title {
+  font-family: Roboto Mono;
+  font-size: 3.5rem;
+}
 
-  .title
-  {
-    font-family: Roboto Mono;
-    font-size: 3.5rem;
+@media (max-width: 768px) {
+  .title {
+    font-size: 1rem;
   }
-  
+  .card {
+    max-width: 90vw;
+  }
+}

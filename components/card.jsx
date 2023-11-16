@@ -10,14 +10,13 @@ function Card() {
   const [cardChange, setCardChange] = useState(0);
   const [play] = useSound("https://www.fesliyanstudios.com/play-mp3/387");
   return (
-    <div className={styles.layout}>
+    <div className="flex flex-col xl:flex-row items-center justify-center">
       {cardChange === 0 && (
         <div className={styles.card}>
           <div
             className={styles.clipboard}
             onClick={() => {
-              setCardChange(1) && play && play()
-
+              setCardChange(1) && play && play();
             }}
           ></div>
           <Image src={logo} />
@@ -61,7 +60,7 @@ function Card() {
           </p>
         </div>
       )}
-      <MediaPlayer
+      {/* <MediaPlayer
         className={styles.video}
         src="https://upcdn.io/FW25bjZ/raw/glow.webm"
         muted={true}
@@ -71,7 +70,7 @@ function Card() {
         aspectRatio="1:1"
       >
         <MediaProvider />
-      </MediaPlayer>
+      </MediaPlayer> */}
     </div>
   );
 }

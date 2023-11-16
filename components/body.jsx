@@ -13,6 +13,7 @@ function Body() {
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     <>
       <section id="home">

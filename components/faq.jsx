@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/faq.module.css";
 import styles2 from "../styles/body.module.css";
-import Image from "next/image";
-import { useDencrypt } from "use-dencrypt-effect";
-import AnimatedScrollButton from '@/components/AnimatedScrollButton';
-
-const Example = ({ symbol }) => {
-  const [value, setValue] = useDencrypt(symbol);
-  return <div onMouseEnter={() => setValue(symbol)}>{value}</div>;
-};
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -51,7 +43,6 @@ const FAQ = () => {
       <div className={styles2.bodyy}>
         <h1>Frequently Asked Questions</h1>
       </div>
-      {/* <AnimatedScrollButton /> */}
       <div className={styles.questions}>
         <div className={styles.inner_questions}>
           {faqData.map((question, index) => (

@@ -21,7 +21,8 @@ function EventCard({ body, title, date }) {
         <div className={styles.countdown}>Over: 00:00:00:00</div>
       ) : (
         <div className={styles.countdown}>
-          STARTS IN: <Countdown onComplete={handleCountdownComplete} date={date} />
+          STARTS IN:{" "}
+          <Countdown onComplete={handleCountdownComplete} date={date} />
         </div>
       )}
     </div>

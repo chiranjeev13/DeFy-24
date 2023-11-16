@@ -90,3 +90,10 @@
 .questionHeader {
   font-family: Roboto MonoP;
 }
+
+@media (max-width: 768px) {
+  .answer {
+    min-width: 1rem;
+    font-size: 1rem;
+  }
+}

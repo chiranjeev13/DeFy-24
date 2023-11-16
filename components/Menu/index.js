@@ -52,10 +52,9 @@ export default function index({ closeMenu }) {
             </div>
 
             <div className={styles.body}>
-    
                 {
                     menu.map((el, index) => {
-                        return <Link data={el} index={index} key={index} href={el.link}/>
+                        return <Link data={el} index={index} key={index} href={el.link} />
                     })
                 }
             </div>
