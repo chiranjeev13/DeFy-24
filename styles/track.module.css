@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+  .card {
+    max-width: 80%;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .card2 {
+    max-width: 80%;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90vw;
+    margin: 3rem;
+  }
+  .card2 {
+    max-width: 90vw;
+    margin: 3rem;
+  }
+}
+
+@font-face {
+  font-family: Roboto MonoL;
+  src: url("../assets/RobotoMono-Light.ttf");
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto MonoL;
+  border: 0.1rem solid;
+  border-color: white;
+  width: 30rem;
+  min-height: 20rem;
+  max-height: fit-content;
+  padding: 1rem;
+  margin: 4rem 0rem 0rem 0rem;
+  transition: all 1;
+  cursor: pointer;
+  letter-spacing: 0.01rem;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto MonoL;
+  border: 0.1rem solid;
+  border-color: black;
+  width: 30rem;
+  min-height: 20rem;
+  max-height: fit-content;
+  padding: 1rem;
+  margin: 4rem 0rem 0rem 0rem;
+  transition: all 1;
+  cursor: pointer;
+  color: black;
+  background-color: #99ff52;
+  letter-spacing: 0.01rem;
+  box-shadow: 0.1rem 0.1rem 1rem lawngreen;
+}
+
+.card_content {
+  font-size: large;
+  font-weight: 200;
+}

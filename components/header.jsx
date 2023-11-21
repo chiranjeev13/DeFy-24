@@ -21,29 +21,52 @@ function Header() {
           <Image src={logo} className={styles.logoImage}></Image>
           <div className={styles.tabs}>
             <a href="#home">
-              <div className={styles.buttons} onMouseEnter={() => play && play()}>
+              <div
+                className={styles.buttons}
+                onMouseEnter={() => play && play()}
+              >
                 . <Example symbol={"HOME"} />
               </div>
             </a>
             <a href="#community">
-              <div className={styles.buttons} onMouseEnter={() => play && play()}>
+              <div
+                className={styles.buttons}
+                onMouseEnter={() => play && play()}
+              >
                 . <Example symbol={"COMMUNITY"} />
               </div>
             </a>
             <a href="#timeline">
-              <div className={styles.buttons} onMouseEnter={() => play && play()}>
+              <div
+                className={styles.buttons}
+                onMouseEnter={() => play && play()}
+              >
                 . <Example symbol={"EVENT TIMELINE"} />
               </div>
             </a>
+            <a href="#tracks">
+              <div
+                className={styles.buttons}
+                onMouseEnter={() => play && play()}
+              >
+                . <Example symbol={"Tracks"} />
+              </div>
+            </a>
             <a href="#faq">
-              <div className={styles.buttons} onMouseEnter={() => play && play()}>
+              <div
+                className={styles.buttons}
+                onMouseEnter={() => play && play()}
+              >
                 . <Example symbol={"FAQ"} />
               </div>
             </a>
           </div>
           <div className={styles.chat}>
             <Image src={chat} />
-            <div className={styles.chat_text} onMouseEnter={() => play && play()}>
+            <div
+              className={styles.chat_text}
+              onMouseEnter={() => play && play()}
+            >
               <Example symbol={"EVENT ASSISTANCE"} />
             </div>
           </div>
