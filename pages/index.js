@@ -5,6 +5,7 @@ import TickerTape from "../components/ticker";
 import Body from "../components/body";
 import FAQ from "@/components/faq";
 import ScrollSection from "@/components/ScrollSection";
+import Tracks from "@/components/tracks";
 import Sponsorship from "@/components/Sponsorship";
 import Footer from "@/components/footer";
 import { useEffect } from "react";
@@ -27,6 +28,7 @@ export default function Home() {
       <TickerTape />
       <Body />
       <ScrollSection />
+      <Tracks />
       <Sponsorship />
       <FAQ />
       <Footer />
