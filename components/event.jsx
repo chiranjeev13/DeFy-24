@@ -12,13 +12,10 @@ function EventCard({ body, title, date }) {
 
   return (
     <div className={styles.card}>
-      <div className={styles.title}>REGISTRATIONS</div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-      reprehenderit nostrum, esse ullam ad libero quisquam, magni, incidunt
-      aspernatur repellendus impedit. Sapiente consequatur rerum alias
-      doloremque modi ducimus omnis! Aut.
+      <div className={styles.title}>{title}</div>
+      <div className="mt-3 text-xl">{body}</div>
       {complete ? (
-        <div className={styles.countdown}>Over: 00:00:00:00</div>
+        <div className={styles.countdown}></div>
       ) : (
         <div className={styles.countdown}>
           STARTS IN:{" "}
