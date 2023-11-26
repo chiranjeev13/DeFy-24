@@ -18,13 +18,13 @@ function ScrollSection() {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: window.innerWidth > 768 ? "-330vw" : "-600vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
+          start: "center center",
+          end: "8000 center",
           scrub: 0.6,
           pin: true,
         },
