@@ -4,6 +4,7 @@ import Video from "../components/video";
 import TickerTape from "../components/ticker";
 import Body from "../components/body";
 import FAQ from "@/components/faq";
+import FAQmob from "@/components/mob_faq";
 import ScrollSection from "@/components/ScrollSection";
 import Tracks from "@/components/tracks";
 import Sponsorship from "@/components/Sponsorship";
@@ -30,7 +31,15 @@ export default function Home() {
       <ScrollSection />
       <Tracks />
       <Sponsorship />
-      <FAQ />
+      {/*  Desktop FAQ Section */}
+      <div class="lg:block hidden">
+        <FAQ />
+      </div>
+
+      {/* <!-- Mobile FAQ Section --> */}
+      <div class="lg:hidden block">
+        <FAQmob />
+      </div>
       <Footer />
     </>
   );
