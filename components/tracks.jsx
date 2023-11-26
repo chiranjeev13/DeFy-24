@@ -50,8 +50,9 @@ function Card() {
             <div>
               <div className={styles.card}>
                 <p className={styles.card_content}>
-                  <TypeAnimation sequence={[`Public Goods (Supply Chain Management):`, 1000]} speed={95} />
+                  <TypeAnimation sequence={[`Public Goods:`, 1000]} speed={95} />
                 </p>
+                
                 <p className="text-center text-base mt-10 mb-4">
                   Develop projects that enhance the transparency, efficiency, and sustainability of supply chain management in the decentralized space. Create solutions that benefit the entire community by addressing challenges related to traceability, authenticity, and ethical practices within supply chains.
                 </p>

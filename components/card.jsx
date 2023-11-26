@@ -23,21 +23,21 @@ function Card() {
           <p className={styles.card_content}>
             <TypeAnimation
               sequence={[
-                `DeFy 24 is a gripping 36-hour hackathon that unites Web3 enthusiasts
-                and aspiring entrepreneurs at the college level, on a quest for real
-                innovation. As the name suggests - DeFy 24 is unlike your typical
-                collegiate hackathons, where the emphasis lies only on programming a
-                tech solution. Here, we challenge the status quo and redefine what a
-                hackathon can be. It's not just about coding; it's about disrupting
-                and reimagining the future. DeFy 24 aims to break boundaries,
-                merging technology and business acumen to create Web3-powered
-                startups that propel us to an era where ‘Decentralization’ and
-                ‘Future yield’ go hand in hand.`,
+                `Unlike typical college-level hackathons, where the emphasis lies only on programming a tech solution, DeFy 24 seeks fresh product ideas in the Web3 space that can be transformed into real businesses. We're on the lookout for Web3-powered startup ideas that propel us into an era where 'Decentralisation' and 'Future Yield' go hand in hand.
+
+                `,
                 1000,
               ]}
               speed={95}
             />
           </p>
+          <TypeAnimation
+            className={styles.bottom}
+            sequence={[`Do you have what it takes to `]}
+          />
+          <TypeAnimation className={styles.color}
+            sequence={[`#DefyTheNorm?`]}
+          />
         </div>
       )}
 

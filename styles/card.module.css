@@ -40,6 +40,15 @@
   font-weight: 200;
 }
 
+.bottom {
+  position: relative;
+  margin: 4rem 0rem 0rem 0rem;
+}
+
+.color {
+  color: lawngreen;
+}
+
 .clipboard {
   display: flex;
   align-self: flex-end;
