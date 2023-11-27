@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 
 export default function link({ data, index }) {
-    const { title, description, images, link } = data;
+    const { title, description, link } = data;
     const outer = useRef(null);
     const inner = useRef(null);
     
@@ -57,19 +57,19 @@ export default function link({ data, index }) {
                         [...Array(2)].map((_, index) => {
                             return <div key={index} className={styles.container}>
                                 <div className={styles.imageContainer}>
-                                    <Image
+                                    {/* <Image
                                         src={`/images/${images[0]}`}
                                         fill
                                         alt="image"
-                                    />
+                                    /> */}
                                 </div>
                                 <p>{description}</p>
                                 <div className={styles.imageContainer}>
-                                    <Image
+                                    {/* <Image
                                         src={`/images/${images[1]}`}
                                         fill
                                         alt="image"
-                                    />
+                                    /> */}
                                 </div>
                                 <p>{description}</p>
                                 

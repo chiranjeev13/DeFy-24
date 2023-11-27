@@ -7,32 +7,27 @@ const menu = [
   {
     title: ".Home",
     description: "To See Everything",
-    images: ["projects1.jpg", "projects2.jpg"],
-    link: "#home",
+    link: "https://www.defy24.xyz/#home",
   },
   {
     title: ".Community",
     description: "To Learn Everything",
-    images: ["agence1.jpg", "agence2.jpg"],
-    link: "#community",
+    link: "https://twitter.com/defy_2024",
   },
   {
     title: ".Event Timeline",
     description: "To Send a FAX",
-    images: ["contact1.jpg", "contact2.jpg"],
-    link: "#timeline",
+    link: "https://www.defy24.xyz/#timeline",
   },
   {
     title: ".Tracks",
     description: "To Send a FAX",
-    images: ["contact1.jpg", "contact2.jpg"],
-    link: "#tracks",
+    link: "https://www.defy24.xyz/#tracks",
   },
   {
     title: ".FAQ",
     description: "To Send a FAX",
-    images: ["contact1.jpg", "contact2.jpg"],
-    link: "#faq",
+    link: "https://www.defy24.xyz/#faq",
   },
 ];
 
