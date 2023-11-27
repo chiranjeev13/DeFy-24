@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -34,30 +35,113 @@ const FAQ = () => {
     ];
 
     return (
+
         <section>
             <div className="font-robomon mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
                 <div className="mb-8 text-center md:mb-12 lg:mb-16">
                     <h2 className="text-3xl font-bold md:text-7xl">Frequently Asked</h2>
                 </div>
 
-                <div className="mb-12 flex flex-col uppercase ">
+                <div className="mb-12 flex flex-col uppercase">
                     {faqData.map((question, index) => (
-                        <div key={index} className="mb-6 max-w-4xl  p-8">
-                            <div className="flex cursor-pointer justify-between border-b border-[#99ff52] pb-8" onClick={() => toggleAnswer(index)}>
+                        <div key={index} className="mb-6 max-w-4xl p-8">
+                            <motion.div
+                                className="flex cursor-pointer justify-between pb-8"
+                                onClick={() => toggleAnswer(index)}
+                                whileHover={{ scale: 1.05 }}
+                            >
                                 <p className="text-xl">{question}</p>
                                 <div className={`relative ml-10 mt-1 flex h-5 w-5 items-center justify-center ${openIndex === index ? 'rotate-90' : ''}`}>
                                     <div className="absolute h-5 w-0.5 bg-[#99ff52]"></div>
                                     <div className="h-0.5 w-5 bg-[#99ff52]"></div>
                                 </div>
-                            </div>
-                            <p className={`mb-4 ${openIndex === index ? '' : 'hidden'}`}>{faqAnswers[index]}</p>
+                            </motion.div>
+                            <motion.div
+                                className={`mb-4  pb-5 ${openIndex === index ? '' : 'hidden'}`}
+                                initial="closed"
+                                animate={openIndex === index ? 'open' : 'closed'}
+                                variants={{
+                                    open: { opacity: 1, height: 'auto' },
+                                    closed: { opacity: 0, height: 0 },
+                                }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {faqAnswers[index]}
+                                {/* Line that becomes visible on click */}
+                                <motion.div
+                                    className="w-full h-0.5 bg-[#99ff52] mt-4"
+                                    initial={{ opacity: 0 }}
+                                    animate={openIndex === index ? { opacity: 1 } : { opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                />
+                            </motion.div>
                         </div>
                     ))}
                 </div>
-
-                {/* <p className="text-center">Can't find the answer you're looking for? Reach out to our <a href="#">customer support team</a>.</p> */}
             </div>
         </section>
+        // <section>
+        //     <div className="font-robomon mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        //         <div className="mb-8 text-center md:mb-12 lg:mb-16">
+        //             <h2 className="text-3xl font-bold md:text-7xl">Frequently Asked</h2>
+        //         </div>
+
+        //         <div className="mb-12 flex flex-col uppercase">
+        //             {faqData.map((question, index) => (
+        //                 <div key={index} className="mb-6 max-w-4xl p-8">
+        //                     <motion.div
+        //                         className="flex cursor-pointer justify-between pb-8"
+        //                         onClick={() => toggleAnswer(index)}
+        //                         whileHover={{ scale: 1.05 }}
+        //                     >
+        //                         <p className="text-xl">{question}</p>
+        //                         <div className={`relative ml-10 mt-1 flex h-5 w-5 items-center justify-center ${openIndex === index ? 'rotate-90' : ''}`}>
+        //                             <div className="absolute h-5 w-0.5 bg-[#99ff52]"></div>
+        //                             <div className="h-0.5 w-5 bg-[#99ff52]"></div>
+        //                         </div>
+        //                     </motion.div>
+        //                     <motion.p
+        //                         className={`mb-4  pb-5 ${openIndex === index ? '' : 'hidden'}`}
+        //                         initial="closed"
+        //                         animate={openIndex === index ? 'open' : 'closed'}
+        //                         variants={{
+        //                             open: { opacity: 1, height: 'auto' },
+        //                             closed: { opacity: 0, height: 0 },
+        //                         }}
+        //                         transition={{ duration: 0.3 }}
+        //                     >
+        //                         {faqAnswers[index]}
+        //                     </motion.p>
+        //                 </div>
+        //             ))}
+        //         </div>
+        //     </div>
+        // </section>
+
+        // <section>
+        //     <div className="font-robomon mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        //         <div className="mb-8 text-center md:mb-12 lg:mb-16">
+        //             <h2 className="text-3xl font-bold md:text-7xl">Frequently Asked</h2>
+        //         </div>
+
+        //         <div className="mb-12 flex flex-col uppercase ">
+        //             {faqData.map((question, index) => (
+        //                 <div key={index} className="mb-6 max-w-4xl  p-8">
+        //                     <div className="flex cursor-pointer justify-between  pb-8" onClick={() => toggleAnswer(index)}>
+        //                         <p className="text-xl">{question}</p>
+        //                         <div className={`relative ml-10 mt-1 flex h-5 w-5 items-center justify-center ${openIndex === index ? 'rotate-90' : ''}`}>
+        //                             <div className="absolute h-5 w-0.5 bg-[#99ff52]"></div>
+        //                             <div className="h-0.5 w-5 bg-[#99ff52]"></div>
+        //                         </div>
+        //                     </div>
+        //                     <p className={`mb-4  border-b border-[#99ff52] pb-5 ${openIndex === index ? '' : 'hidden'}`}>{faqAnswers[index]}</p>
+        //                 </div>
+        //             ))}
+        //         </div>
+
+        //         {/* <p className="text-center">Can't find the answer you're looking for? Reach out to our <a href="#">customer support team</a>.</p> */}
+        //     </div>
+        // </section>
     );
 };
 
