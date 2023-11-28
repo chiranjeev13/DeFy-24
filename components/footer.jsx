@@ -7,7 +7,7 @@ const footer = () => {
         <div class="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
           <div class="w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial max-[767px]:mr-0">
             <h2 class="text-3xl font-semibold text-white md:text-5xl">
-              <span class="text-[#99ff52]">Emphasing</span> real innovation over
+              <span class="text-[#99ff52]">Emphasizing</span> real innovation over
               typical tech solutions.
             </h2>
           </div>
