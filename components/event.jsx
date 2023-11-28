@@ -6,6 +6,16 @@ import Image from "next/image";
 
 function EventCard({ body, title, date, timeline, k }) {
   const [complete, setComplete] = useState(false);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   // Define a function that sets the state when the countdown is complete
   const handleCountdownComplete = () => {
