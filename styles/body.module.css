@@ -19,6 +19,24 @@
   justify-content: center;
 }
 
+.color
+{
+  display: flex;
+  margin: 5rem 0rem 0rem 0rem;
+  text-align: start;
+  padding: 0rem 0rem 0rem 1rem;
+  flex-direction: column;
+  color: lawngreen;
+  font-family: Roboto Mono;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .bodyy {
     font-size: 1.9rem;

@@ -28,10 +28,9 @@ export default function Home() {
       <Video />
       <TickerTape />
       <Body />
-      <ScrollSection />
       <Tracks />
+      <ScrollSection />
       <Sponsorship />
-      {/*  Desktop FAQ Section */}
       <div class="lg:block hidden">
         <FAQ />
       </div>

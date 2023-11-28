@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from "next/image";
+import clubs from "../assets/clubs.svg";
 const footer = () => {
   return (
     <footer class="bg-black text-[#bcb9b9] font-robomon">
@@ -7,8 +8,8 @@ const footer = () => {
         <div class="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
           <div class="w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial max-[767px]:mr-0">
             <h2 class="text-3xl font-semibold text-white md:text-5xl">
-              <span class="text-[#99ff52]">Emphasizing</span> real innovation over
-              typical tech solutions.
+              <span class="text-[#99ff52]">Emphasizing</span> real innovation
+              over typical tech solutions.
             </h2>
           </div>
           <div class="max-[991px]:ml-4 max-[991px]:flex-none max-[767px]:ml-0 max-[767px]:mt-8">
@@ -39,8 +40,14 @@ const footer = () => {
                         <a href="#" class="inline-block py-1.5 pl-0 pr-6 font-normal text-[#bcb9b9] transition hover:text-[#99ff52] sm:py-2 sm:pr-6 lg:pr-12">Help</a>
                     </div> */}
           <div class="max-[991px]:flex-none">
+            <Image
+              style={{ margin: "-9rem -2rem -4rem -1rem" }}
+              src={clubs}
+              width={400}
+              height={400}
+            />
             <p class="text-[#bcb9b9] max-[479px]:text-sm">
-              © Copyright 2024. All rights reserved. DEFY24
+              © Copyright 2024. All rights reserved.
             </p>
           </div>
         </div>

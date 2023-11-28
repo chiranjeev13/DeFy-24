@@ -18,14 +18,17 @@ function Body() {
     <>
       <section id="home">
         <div>
-          <div className={styles.bodyy}>
-            WHAT IS DEFY?
+          <div className={styles.color}>
+            # DEFY THE NORM
             <div
               className="apply-button"
               data-hackathon-slug="defy2024"
               data-button-theme="dark-inverted"
-              style={{ height: "44px", width: "312px" }}
+              style={{ height: "44px", width: "312px" , padding: "1rem 1rem 1rem 1rem"}}
             ></div>
+          </div>
+          <div className={styles.bodyy}>
+            WHAT IS DEFY?
             <Card />
           </div>
         </div>

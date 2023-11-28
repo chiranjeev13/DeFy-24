@@ -9,7 +9,7 @@ import Image from "next/image";
 const Sponsorship = () => {
   return (
     <section id="sponsorship">
-      <div className={styles.bodyy}>Sponsorship</div>
+      <div className={styles.bodyy}>OUR SPONSORS</div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-[6rem] py-12 px-4 mb-6 ">
         <a href="https://polygon.technology/" target="_blank" className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  ">
           <Image
