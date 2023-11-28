@@ -22,7 +22,7 @@ function Body() {
             WHAT IS DEFY?
             <div
               className="apply-button"
-              data-hackathon-slug="defy24"
+              data-hackathon-slug="defy2024"
               data-button-theme="dark-inverted"
               style={{ height: "44px", width: "312px" }}
             ></div>

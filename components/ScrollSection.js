@@ -55,6 +55,7 @@ function ScrollSection() {
               body={"Choose a track to compete in and register your team."}
               date={"2023-05-12T23:00:03"}
               suppressHydrationWarning={true}
+              k={1}
             />{" "}
           </div>
           <div className={styles.line}></div>

@@ -3,7 +3,6 @@ import styles from "../styles/card.module.css";
 import logo from "../assets/defy-logo.svg";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { MediaPlayer, MediaProvider } from "@vidstack/react";
 import useSound from "use-sound";
 
 function Card() {
@@ -49,13 +48,10 @@ function Card() {
             onClick={() => setCardChange(0)}
           ></div>
           <Image src={logo} />
-          <p className={styles.card_content}>
+          <p className={styles.card_content1}>
             <TypeAnimation
-              sequence={[
-                `DeFy 24 is a gripping 36-hour hackathon that unites Web3 enthusiasts
-                and aspiring`,
-                1000,
-              ]}
+              sequence={[`Instagram : @de.fy24`, 2500, `X : @defy_2024`, 2500]}
+              repeat={Infinity}
               cursor={false}
               speed={50}
             />

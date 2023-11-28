@@ -39,6 +39,14 @@
   font-size: large;
   font-weight: 200;
 }
+.card_content1 {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 5rem 0rem 0rem 1rem;
+  justify-content: center;
+
+}
 
 .bottom {
   position: relative;
