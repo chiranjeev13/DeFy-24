@@ -12,9 +12,8 @@ function TickerTape() {
             Announcing&nbsp;
             <div className={styles.body_w}>
               {" "}
-              DeFy-24 a 36-hour collegiate hackathon uniting Web3 enthusiasts
-              and aspiring entrepreneurs, emphasizing real innovation over
-              typical tech solutions.
+              ANNOUNCING DEFY 24, WHERE WEB3 MEETS BUSINESS • A 36 HOUR
+              COLLEGE-LEVEL HACK FOR FUTURE WEB3 STARTUP FOUNDERS • REGISTER NOW
             </div>
           </div>
         ))}

@@ -34,7 +34,7 @@
   border-color: white;
   width: 23rem;
   min-height: 20rem;
-  max-height: fit-content;
+  max-height: 20rem;
   padding: 1rem;
   margin: 4rem 0rem 0rem 0rem;
   transition: all 1;

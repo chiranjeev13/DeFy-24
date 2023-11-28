@@ -10,7 +10,6 @@ const FAQ = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
 
   const faqData = [
-    "What is the DeFy24 Hackathon?",
     "Who can participate?",
     "What's the permitted team size? Can I participate individually?",
     "When will the applications and submissions close?",
@@ -22,7 +21,6 @@ const FAQ = () => {
   ];
 
   const faqAnswers = [
-    "The DeFy24 Hackathon is a 24-hour hackathon focused on decentralized finance (DeFi) projects.",
     "DeFy 24 is open to college students, from all backgrounds, who are passionate about Web3 and/or are aspiring entrepreneurs.",
     "You can participate in teams of 4-6 if you fit the above criteria. Unfortunately, DeFy 24 does not permit solo participations.",
     "Applications and submissions both close on 31st Dec, 2023.",

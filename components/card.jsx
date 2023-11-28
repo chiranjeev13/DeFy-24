@@ -21,22 +21,23 @@ function Card() {
           ></div>
           <Image src={logo} />
           <p className={styles.card_content}>
-            <TypeAnimation
-              sequence={[
-                `Unlike typical college-level hackathons, where the emphasis lies only on programming a tech solution, DeFy 24 seeks fresh product ideas in the Web3 space that can be transformed into real businesses. We're on the lookout for Web3-powered startup ideas that propel us into an era where 'Decentralisation' and 'Future Yield' go hand in hand.
-
-                `,
-                1000,
-              ]}
-              speed={95}
-            />
+            Unlike typical college-level hackathons, where the emphasis lies
+            only on programming a tech solution, DeFy 24 seeks fresh product
+            ideas in the Web3 space that can be transformed into real
+            businesses. We're on the lookout for Web3-powered startup ideas that
+            propel us into an era where 'Decentralisation' and 'Future Yield' go
+            hand in hand.
           </p>
           <TypeAnimation
             className={styles.bottom}
             sequence={[`Do you have what it takes to `]}
+            cursor={false}
+            speed={65}
           />
-          <TypeAnimation className={styles.color}
+          <TypeAnimation
+            className={styles.color}
             sequence={[`#DefyTheNorm?`]}
+            speed={1}
           />
         </div>
       )}
@@ -55,7 +56,8 @@ function Card() {
                 and aspiring`,
                 1000,
               ]}
-              speed={90}
+              cursor={false}
+              speed={50}
             />
           </p>
         </div>

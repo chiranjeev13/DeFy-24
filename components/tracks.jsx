@@ -30,10 +30,15 @@ function Card() {
             <div>
               <div className={styles.card}>
                 <p className={styles.card_content}>
-                  <TypeAnimation sequence={[`Account Abstraction:`, 1000]} speed={95} />
+                  <TypeAnimation
+                    sequence={[`Account Abstraction:`, 1000]}
+                    speed={95}
+                  />
                 </p>
                 <p className="text-center text-base mt-10">
-                  Create user-friendly and secure solutions for managing accounts in decentralized apps. Think of new ways to simplify how users interact with blockchain-based applications.
+                  Create user-friendly and secure solutions for managing
+                  accounts in decentralized apps. Think of new ways to simplify
+                  how users interact with blockchain-based applications.
                 </p>
               </div>
             </div>
@@ -43,24 +48,30 @@ function Card() {
                   <TypeAnimation sequence={[`DeFi:`, 1000]} speed={95} />
                 </p>
                 <p className="text-center text-base mt-10">
-                  Build and analyze prototypes for decentralized finance. Imagine digital solutions for lending, trading, and other financial services without relying on traditional institutions.
+                  Build and analyze prototypes for decentralized finance.
+                  Imagine digital solutions for lending, trading, and other
+                  financial services without relying on traditional
+                  institutions.
                 </p>
               </div>
             </div>
             <div>
               <div className={styles.card}>
                 <p className={styles.card_content}>
-                  <TypeAnimation sequence={[`Public Goods:`, 1000]} speed={95} />
+                  <TypeAnimation
+                    sequence={[`Public Goods:`, 1000]}
+                    speed={95}
+                  />
                 </p>
-                
+
                 <p className="text-center text-base mt-10 mb-4">
-                  Develop projects that enhance the transparency, efficiency, and sustainability of supply chain management in the decentralized space. Create solutions that benefit the entire community by addressing challenges related to traceability, authenticity, and ethical practices within supply chains.
+                  Create decentralized supply chain projects to boost
+                  transparency, efficiency, and sustainability. Develop
+                  solutions tackling traceability, authenticity, and ethical
+                  challenges for the community's benefit.
                 </p>
               </div>
             </div>
-
-            
-
           </div>
         </div>
       </div>

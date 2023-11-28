@@ -50,54 +50,57 @@ function ScrollSection() {
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
             <Eventcard
-              title={"REGISTRATIONS OPEN: 5th Dec, 2023"}
+              title={"REGISTRATIONS OPEN:"}
+              timeline={"5th Dec, 2023"}
               body={"Choose a track to compete in and register your team."}
               date={"2023-05-12T23:00:03"}
               suppressHydrationWarning={true}
             />{" "}
           </div>
-          <div className={styles.line}>
-            <Image src={arrow} />
-          </div>
+          <div className={styles.line}></div>
 
           <div className="scroll-section">
             <Eventcard
-              title={"IDEATION ROUND: 5th Dec, 2023 - 31st Dec, 2023"}
-              body={"Submit your Web3 Startup Idea using the DeFy template in the Ideation round. The template and rulebook can be found on Devfolio when you register."}
+              title={"IDEATION ROUND:"}
+              timeline={"5th Dec, 2023 - 31st Dec, 2023"}
+              body={
+                "Submit your Web3 Startup Idea using the DeFy template in the Ideation round. The template and rulebook can be found on Devfolio when you register."
+              }
             />
           </div>
-          <div className={styles.line}>
-            <Image src={arrow} />
-          </div>
+          <div className={styles.line}></div>
 
           <div className="scroll-section">
             <Eventcard
-              title={"SUBMISSIONS CLOSE: 31st Dec, 2023"}
-              body={"Sit back and relax while the judges go through your submissions."}
+              title={"SUBMISSIONS CLOSE:"}
+              timeline={"31st Dec, 2023"}
+              body={
+                "Sit back and relax while the judges go through your submissions."
+              }
             />
           </div>
-          <div className={styles.line}>
-            <Image src={arrow} />
-          </div>
+          <div className={styles.line}></div>
 
           <div className="scroll-section">
             <Eventcard
-              title={"SHORTLIST ANNOUNCEMENT: 15th Jan, 2023"}
-              body={"The Top 30 teams, who will be progressing to the Hackathon phase, shall be announced. These teams shall be invited to the main event spanning 3 days, happening offline at VIT Chennai."}
+              title={"SHORTLIST ANNOUNCEMENT:"}
+              timeline={"15th Jan, 2023"}
+              body={
+                "The Top 30 teams, who will be progressing to the Hackathon phase, shall be announced. These teams shall be invited to the main event spanning 3 days, happening offline at VIT Chennai."
+              }
             />
           </div>
-          <div className={styles.line}>
-            <Image src={arrow} />
-          </div>
+          <div className={styles.line}></div>
 
           <div className="scroll-section">
             <Eventcard
-              title={"HACKATHON: 22nd, 23rd & 24th Jan, 2023"}
-              body={"Top teams will contend against each other in this 36 hour hack - where they not only have to build the prototype of their product, but also come up with an investor-ready Pitch Deck."}
+              title={"INTO THE ENDGAME:"}
+              timeline={"22nd, 23rd & 24th Jan, 2023"}
+              body={
+                "Top teams will contend against each other in this 36 hour hack - where they not only have to build the prototype of their product, but also come up with an investor-ready Pitch Deck."
+              }
             />
           </div>
-          
-
         </div>
       </div>
     </section>

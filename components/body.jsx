@@ -19,7 +19,7 @@ function Body() {
       <section id="home">
         <div>
           <div className={styles.bodyy}>
-            Core Concept of DeFy
+            WHAT IS DEFY?
             <div
               className="apply-button"
               data-hackathon-slug="defy24"
