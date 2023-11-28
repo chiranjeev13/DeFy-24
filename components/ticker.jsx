@@ -12,7 +12,7 @@ function TickerTape() {
             Announcing&nbsp;
             <div className={styles.body_w}>
               {" "}
-              ANNOUNCING DEFY 24, WHERE WEB3 MEETS BUSINESS • A 36 HOUR
+              DEFY 24, WHERE WEB3 MEETS BUSINESS • A 36 HOUR
               COLLEGE-LEVEL HACK FOR FUTURE WEB3 STARTUP FOUNDERS • REGISTER NOW
             </div>
           </div>
