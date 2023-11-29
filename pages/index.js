@@ -9,6 +9,7 @@ import ScrollSection from "@/components/ScrollSection";
 import Tracks from "@/components/tracks";
 import Sponsorship from "@/components/Sponsorship";
 import Footer from "@/components/footer";
+import Mobtl from "@/components/mob_timeline"
 import { useEffect } from "react";
 
 export default function Home() {
@@ -29,12 +30,16 @@ export default function Home() {
       <TickerTape />
       <Body />
       <Tracks />
-      <ScrollSection />
+      <div class="lg:block hidden">
+        <ScrollSection />
+      </div>
+      <div class="lg:hidden block">
+        <Mobtl />
+      </div>
       <Sponsorship />
       <div class="lg:block hidden">
         <FAQ />
       </div>
-
       {/* <!-- Mobile FAQ Section --> */}
       <div class="lg:hidden block">
         <FAQmob />

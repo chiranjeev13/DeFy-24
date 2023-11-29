@@ -4,6 +4,7 @@ import logo from "../assets/defy-logo.svg";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import useSound from "use-sound";
+import Link from 'next/link';
 
 function Card() {
   const [cardChange, setCardChange] = useState(0);
@@ -49,12 +50,14 @@ function Card() {
           ></div>
           <Image src={logo} />
           <p className={styles.card_content1}>
+            <Link href="https://www.instagram.com/de.fy24">
             <TypeAnimation
               sequence={[`Instagram : @de.fy24`, 2500, `X : @defy_2024`, 2500]}
               repeat={Infinity}
               cursor={false}
               speed={50}
             />
+              </Link>
           </p>
         </div>
       )}
