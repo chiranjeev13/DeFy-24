@@ -55,4 +55,19 @@
   .card {
     max-width: 90vw;
   }
+  .timeline {
+    display: flex;
+    font-family: Roboto Mono;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    margin: 23rem 0rem 0rem 1rem;
+  }
+  .calendar {
+    position: relative;
+    margin: -1rem 0rem 0rem 0rem;
+  }
+  .devfolio {
+    max-width: fit-content;
+  }
 }

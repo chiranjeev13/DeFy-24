@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/event.module.css";
-import Countdown from "react-countdown";
 import calendar from "../assets/calendar.svg";
 import Image from "next/image";
 
@@ -17,10 +16,6 @@ function EventCard({ body, title, date, timeline, k }) {
     };
   }, []);
 
-  // Define a function that sets the state when the countdown is complete
-  const handleCountdownComplete = () => {
-    setComplete(true);
-  };
 
   return (
     <div className={styles.card}>
@@ -43,14 +38,6 @@ function EventCard({ body, title, date, timeline, k }) {
         {timeline}
       </div>
 
-      {complete ? (
-        <div className={styles.countdown}></div>
-      ) : (
-        <div className={styles.countdown}>
-          STARTS IN:{" "}
-          <Countdown onComplete={handleCountdownComplete} date={date} />
-        </div>
-      )}
     </div>
   );
 }
