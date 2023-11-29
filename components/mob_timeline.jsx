@@ -13,7 +13,7 @@ const mob_timeline = () => {
     const [cardChange, setCardChange] = useState(0);
     return (
         <div>
-            
+            <div className={styles.bodyy}>Event Timeline</div>
             <div className="flex flex-col xl:flex-row items-center justify-center">
                 {cardChange === 0 && (
                     <div className={stylesb.card}>
