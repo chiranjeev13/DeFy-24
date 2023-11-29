@@ -47,7 +47,7 @@ function Card() {
                 <p className={styles.card_content}>
                   <TypeAnimation sequence={[`DeFi:`, 1000]} speed={95} />
                 </p>
-                <p className="text-center text-base mt-10">
+                <p className="text-center text-base mt-5">
                   Build and analyze prototypes for decentralized finance.
                   Imagine digital solutions for lending, trading, and other
                   financial services without relying on traditional
@@ -64,7 +64,7 @@ function Card() {
                   />
                 </p>
 
-                <p className="text-center text-base mt-10 mb-4">
+                <p className="text-center text-base mt-4 mb-4">
                   Create decentralized supply chain projects to boost
                   transparency, efficiency, and sustainability. Develop
                   solutions tackling traceability, authenticity, and ethical
