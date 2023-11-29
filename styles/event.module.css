@@ -31,12 +31,13 @@
 
 .calendar {
   padding: 0.3rem 0.7rem 0rem 0rem;
+
 }
 
 .timeline {
   display: flex;
   font-family: Roboto Mono;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-weight: bold;
   position: absolute;
   margin: 23rem 0rem 0rem 1rem;
