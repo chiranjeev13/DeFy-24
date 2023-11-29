@@ -31,7 +31,7 @@ function EventCard({ body, title, date, timeline, k }) {
           <div
             className="apply-button"
             data-hackathon-slug="defy2024"
-            data-button-theme="dark-inverted"
+            data-button-theme="dark"
             style={{ height: "44px", width: "312px" }}
           ></div>
         </div>
