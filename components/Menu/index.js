@@ -11,7 +11,7 @@ const menu = [
   },
   {
     title: ".Community",
-    description: "To Learn Everything",
+    description: "To Keep in Touch",
     link: "https://twitter.com/defy_2024",
   },
   {
@@ -21,12 +21,12 @@ const menu = [
   },
   {
     title: ".Tracks",
-    description: "To Send a FAX",
+    description: "To Build a project",
     link: "https://www.defy24.xyz/#tracks",
   },
   {
     title: ".FAQ",
-    description: "To Send a FAX",
+    description: "To Get Answers",
     link: "https://www.defy24.xyz/#faq",
   },
 ];
