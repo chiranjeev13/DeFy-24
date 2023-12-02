@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { opacity, slideLeft, mountAnim } from "../../animation/anim";
 import styles from "./style.module.scss";
 import Link from "./link";
+import { useMediaQuery } from "react-responsive";
 
 const menu = [
   {
@@ -31,7 +32,8 @@ const menu = [
   },
 ];
 
-export default function index({ closeMenu }) {
+export default function Index({ closeMenu }) {
+
   return (
     <motion.div
       className={styles.menu}
@@ -39,6 +41,9 @@ export default function index({ closeMenu }) {
       initial="initial"
       animate="enter"
       exit="exit"
+      onClick={() => {
+        closeMenu();
+      }}
     >
       <div className={styles.header}>
         <motion.svg
@@ -63,17 +68,6 @@ export default function index({ closeMenu }) {
           return <Link data={el} index={index} key={index} href={el.link} />;
         })}
       </div>
-
-      {/* <motion.div
-                variants={opacity}
-                {...mountAnim}
-                custom={0.5}
-                className={styles.footer}>
-                <a>FB</a>
-                <a>IG</a>
-                <a>IN</a>
-                <a>BE</a>
-            </motion.div> */}
     </motion.div>
   );
 }

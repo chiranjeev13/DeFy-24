@@ -36,7 +36,7 @@ const FAQ = () => {
 
     return (
 
-        <section>
+        <section id='mob-faq'>
             <div className="font-robomon mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
                 <div className="mb-8 text-center md:mb-12 lg:mb-16">
                     <h2 className="text-3xl font-bold md:text-7xl">Frequently Asked</h2>
