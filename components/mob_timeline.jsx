@@ -249,7 +249,7 @@ const mob_timeline = () => {
                 )}
 
             </div>
-            {/* <section id="timeline">
+            {/* <section >
                 
                 <div className={styles.bodyy}>Event Timeline</div>
                 <div >
