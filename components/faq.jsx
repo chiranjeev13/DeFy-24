@@ -1,6 +1,10 @@
+"use client"
+
 import React, { useState } from "react";
 import styles from "../styles/faq.module.css";
 import styles2 from "../styles/body.module.css";
+import { motion } from "framer-motion";
+
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -8,6 +12,11 @@ const FAQ = () => {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   const faqData = [
     "Who can participate?",
@@ -46,39 +55,88 @@ const FAQ = () => {
 
   return (
     <section id="faq">
-      <div className={styles2.bodyy}>
-        <h1>Frequently Asked Questions</h1>
-      </div>
-      <div className={styles.questions}>
-        <div className={styles.inner_questions}>
-          {faqData.map((question, index) => (
-            <div key={index} className={styles.questionContainer}>
-              <div className={styles.questionHeader}>
-                <h1
-                  onMouseMove={(event) => handleMouseOver(index, event)}
-                  onMouseLeave={clearCurrentQuestion}
+      <div className="w-full lg:block hidden">
+
+        <div className={styles2.bodyy}>
+          <h1>Frequently Asked Questions</h1>
+        </div>
+        <div className={styles.questions}>
+          <div className={styles.inner_questions}>
+            {faqData.map((question, index) => (
+              <div key={index} className={styles.questionContainer}>
+                <div className={styles.questionHeader}>
+                  <h1
+                    onMouseMove={(event) => handleMouseOver(index, event)}
+                    onMouseLeave={clearCurrentQuestion}
+                  >
+                    - {question}
+                  </h1>
+                </div>
+                <hr />
+                <br />
+                <div
+                  className={styles.popup}
+                  style={{ left: mouseX, top: mouseY }}
                 >
-                  - {question}
-                </h1>
+                  {currentQuestion && (
+                    <div className={styles.answer}>
+                      <p>
+                        <TypeAnimation sequence={[currentQuestion]} speed={90} />
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
-              <hr />
-              <br />
-              <div
-                className={styles.popup}
-                style={{ left: mouseX, top: mouseY }}
-              >
-                {currentQuestion && (
-                  <div className={styles.answer}>
-                    <p>
-                      <TypeAnimation sequence={[currentQuestion]} speed={90} />
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
+
+      <div className="w-full block lg:hidden">
+        <div className="font-robomon mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+          <div className="mb-8 text-center md:mb-12 lg:mb-16">
+            <h2 className="text-3xl font-bold md:text-7xl">Frequently Asked</h2>
+          </div>
+
+          <div className="mb-12 flex flex-col uppercase">
+            {faqData.map((question, index) => (
+              <div key={index} className="mb-6 max-w-4xl p-8">
+                <motion.div
+                  className="flex cursor-pointer justify-between pb-8"
+                  onClick={() => toggleAnswer(index)}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <p className="text-xl">{question}</p>
+                  <div className={`relative ml-10 mt-1 flex h-5 w-5 items-center justify-center ${openIndex === index ? 'rotate-90' : ''}`}>
+                    <div className="absolute h-5 w-0.5 bg-[#99ff52]"></div>
+                    <div className="h-0.5 w-5 bg-[#99ff52]"></div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  className={`mb-4  pb-5 ${openIndex === index ? '' : 'hidden'}`}
+                  initial="closed"
+                  animate={openIndex === index ? 'open' : 'closed'}
+                  variants={{
+                    open: { opacity: 1, height: 'auto' },
+                    closed: { opacity: 0, height: 0 },
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {faqAnswers[index]}
+                  {/* Line that becomes visible on click */}
+                  <motion.div
+                    className="w-full h-0.5 bg-[#99ff52] mt-4"
+                    initial={{ opacity: 0 }}
+                    animate={openIndex === index ? { opacity: 1 } : { opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 };

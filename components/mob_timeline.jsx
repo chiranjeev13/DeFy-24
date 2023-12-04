@@ -12,7 +12,7 @@ import styles from "../styles/body.module.css";
 const mob_timeline = () => {
     const [cardChange, setCardChange] = useState(0);
     return (
-        <div>
+        <section id='mob-timeline'>
             <div className={styles.bodyy}>Event Timeline</div>
             <div className="flex flex-col xl:flex-row items-center justify-center">
                 {cardChange === 0 && (
@@ -249,7 +249,7 @@ const mob_timeline = () => {
                 )}
 
             </div>
-            {/* <section id="timeline">
+            {/* <section >
                 
                 <div className={styles.bodyy}>Event Timeline</div>
                 <div >
@@ -311,7 +311,7 @@ const mob_timeline = () => {
                     </div>
                 </div>
             </section> */}
-        </div>
+        </section>
     )
 }
 

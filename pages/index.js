@@ -30,18 +30,18 @@ export default function Home() {
       <TickerTape />
       <Body />
       <Tracks />
-      <div class="lg:block hidden">
+      <div class="">
         <ScrollSection />
       </div>
-      <div class="lg:hidden block">
+      <div class="hidden">
         <Mobtl />
       </div>
       <Sponsorship />
-      <div class="lg:block hidden">
+      <div class="">
         <FAQ />
       </div>
       {/* <!-- Mobile FAQ Section --> */}
-      <div class="lg:hidden block">
+      <div class="hidden">
         <FAQmob />
       </div>
       <Footer />
