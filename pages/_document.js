@@ -51,6 +51,21 @@ export default function Document() {
       />
       <meta name="author" content="Your Name" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": schemaType,
+            name: "DeFy'24",
+            about: "DeFy'24 stands out from typical college hackathons by prioritizing fresh product ideas in the Web3 space. We're on the lookout for innovative startup concepts that leverage Web3 technology, emphasizing a future where 'decentralization' and 'future yield' coexist.",
+            url: "https://www.defy24.xyz/",
+          }),
+        }}
+      />
+      
       <body>
         <Main />
         <NextScript />
