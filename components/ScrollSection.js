@@ -92,7 +92,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"SUBMISSIONS CLOSE:"}
-                timeline={"31st Dec,2023"}
+                timeline={"25th Dec,2023"}
                 body={
                   "Sit back and relax while the judges go through your submissions."
                 }
@@ -103,7 +103,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"SHORTLIST ANNOUNCEMENT:"}
-                timeline={"15th Jan,2024"}
+                timeline={"8th Jan,2024"}
                 body={
                   "The Top 30 teams, who will be progressing to the Hackathon phase, shall be announced. These teams shall be invited to the main event spanning 3 days, happening offline at VIT Chennai."
                 }
