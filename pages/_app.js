@@ -1,6 +1,5 @@
 import React from "react";
 import { Analytics } from '@vercel/analytics/react';
-
 import { Helmet } from "react-helmet";
 import "@/styles/globals.css";
 import Header from "@/components/Headerr";
