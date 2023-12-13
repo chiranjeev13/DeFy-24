@@ -53,7 +53,7 @@ export default function Document() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -64,7 +64,7 @@ export default function Document() {
             url: "https://www.defy24.xyz/",
           }),
         }}
-      />
+      /> */}
       
       <body>
         <Main />
