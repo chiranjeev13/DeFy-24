@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { opacity, slideLeft, mountAnim } from "../../animation/anim";
 import styles from "./style.module.scss";
 import Link from "./link";
-import { useMediaQuery } from "react-responsive";
 
 const menu = [
   {
