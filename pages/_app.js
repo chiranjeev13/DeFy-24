@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
         <meta name="keywords" content="defy, defy24, defy'24, chennai, web3, web3 hackathon, chennai hackathon, web3 chennai, ethindia, dao, daocommunity, daovitchennai, vitchennai, vellore institute of technology" />
         <meta name="author" content="Your Name" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Add more meta tags as needed for SEO */}
+
       </Helmet>
       <Header />
       <Component {...pageProps} />
