@@ -10,7 +10,7 @@ function Video() {
     <div className={styles.videoWrapper}>
       <MediaPlayer
         className={styles.video}
-        src="https://upcdn.io/FW25bjZ/raw/defypromo.mp4"
+        src="https://defy24.b-cdn.net/defypromo.mp4"
         muted={true}
         loop={true}
         autoplay={true}
