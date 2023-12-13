@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "@vidstack/player": "^1.6.5",
     "@vidstack/player-react": "^1.6.5",
     "@vidstack/react": "^1.5.0",
