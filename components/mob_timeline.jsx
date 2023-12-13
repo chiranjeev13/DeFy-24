@@ -83,7 +83,7 @@ const mob_timeline = () => {
                         />
                         <TypeAnimation
                             className={stylesb.color}
-                            sequence={[`5th Dec, 2023 - 31st Dec, 2023`]}
+                            sequence={[`5th Dec, 2023 - 25th Dec, 2023`]}
                             speed={1}
                         />
                     </div>
