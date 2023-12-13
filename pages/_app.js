@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Helmet } from "react-helmet";
 import "@/styles/globals.css";
 import Header from "@/components/Headerr";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
