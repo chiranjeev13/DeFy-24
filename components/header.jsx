@@ -28,7 +28,7 @@ function Header() {
                 . <Example symbol={"HOME"} />
               </div>
             </a>
-            <a href="#community">
+            <a href="https://chat.whatsapp.com/FTwIBDMPZCB3n1aTqpokCi">
               <div
                 className={styles.buttons}
                 onMouseEnter={() => play && play()}
