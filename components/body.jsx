@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/body.module.css";
 import Card from "./card";
+import Button from "./ButtonAnimatedGradient"
 
 function Body() {
   useEffect(() => {
@@ -20,12 +21,14 @@ function Body() {
         <div>
           <div className={styles.color}>
             # DEFY THE NORM
-            <div
+
+            {/* <div
               className="apply-button"
               data-hackathon-slug="defy2024"
               data-button-theme="dark-inverted"
-              style={{ height: "44px", width: "312px" , padding: "1rem 1rem 1rem 1rem"}}
-            ></div>
+              style={{ height: "44px", width: "312px", padding: "1rem 1rem 1rem 1rem" }}
+            ></div> */}
+            <Button />
           </div>
           <div className={styles.bodyy}>
             WHAT IS DEFY?
