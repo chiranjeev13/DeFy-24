@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 2rem 0rem 0rem 25rem;
+    margin: 2rem 0rem 0rem 10rem;
 }
 
 @media (max-width: 768px) {
@@ -34,8 +34,8 @@
 }
 
 .body_w img {
-    width: 230px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
 }
 
 .bodyy {
