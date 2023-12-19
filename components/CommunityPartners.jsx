@@ -20,17 +20,20 @@ import tpgsrmist from "../assets/tpgsrmist.png";
 import web3chennai from "../assets/web3chennai.png";
 import web3kerala from "../assets/web3kerala.png";
 import web3meetups from "../assets/web3meetups.png";
+import Decentralclass from "../assets/decentralclass.png";
+import polygonguildjaipur from "../assets/polygonguildjaipur.jpeg";
+import vitrendz from "../assets/vitrendz.png";
+import tpg from '../assets/730.png'
 
 function CommunityPartners() {
-    const loop = 0.5;
-    const partnerLogos = [threepointo, befikra, BhopalDAO, blochub, blockchcainsrm, codeate, CodeInBlogs, devstation, hyddao, LumosWizard, polygonguildkolkata, skepsis, social3, spheron, tpgsrmist, web3chennai, web3kerala, web3meetups];
+    const partnerLogos = [Decentralclass, polygonguildjaipur, vitrendz, tpg, threepointo, befikra, BhopalDAO, blochub, blockchcainsrm, codeate, CodeInBlogs, devstation, hyddao, LumosWizard, polygonguildkolkata, skepsis, social3, spheron, tpgsrmist, web3chennai, web3kerala, web3meetups];
 
     return (
         <section id="ticker">
             <div className={styles.bodyy}>
                 <h1>Community Partners</h1>
             </div>
-            <Ticker duration={loop}>
+            <Ticker duration={13}>
                 {partnerLogos.map((item, index) => (
                     <div key={index} className={styles.body}>
                         <div className={styles.body_w}>
