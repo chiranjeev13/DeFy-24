@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Roboto MonoL;
+    src: url("../assets/RobotoMono-Light.ttf");
+}
+
+.body {
+    display: flex;
+    color: #99ff52;
+    font-family: Roboto MonoL;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2rem 0rem 0rem 25rem;
+}
+
+@media (max-width: 768px) {
+    .body {
+        font-size: 2rem;
+        margin: 12rem 0rem 0rem 0rem;
+    }
+}
+
+@media (min-width: 777px) and (max-width: 1111px) {
+    .body {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+.body_w {
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+.body_w img {
+    width: 230px;
+    height: 150px;
+}
+
+.bodyy {
+    display: flex;
+    margin: 5rem 0rem;
+    text-align: start;
+    flex-direction: column;
+    color: #fff;
+    font-family: Roboto MonoB;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.23rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}

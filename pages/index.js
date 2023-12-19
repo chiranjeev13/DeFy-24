@@ -11,6 +11,7 @@ import Sponsorship from "@/components/Sponsorship";
 import Footer from "@/components/footer";
 import Mobtl from "@/components/mob_timeline"
 import { useEffect } from "react";
+import CommunityPartners from "@/components/CommunityPartners";
 
 export default function Home() {
   useEffect(() => {
@@ -37,6 +38,9 @@ export default function Home() {
         <Mobtl />
       </div>
       <Sponsorship />
+      <div class="">
+        <CommunityPartners />
+      </div>
       <div class="">
         <FAQ />
       </div>

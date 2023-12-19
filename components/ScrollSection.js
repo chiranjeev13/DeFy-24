@@ -70,11 +70,10 @@ function ScrollSection() {
               <Eventcard
                 title={"REGISTRATIONS OPEN:"}
                 timeline={"5th Dec,2023"}
-                body={"Choose a track to compete in and register your team."}
-                date={"2023-05-12T23:00:03"}
-                suppressHydrationWarning={true}
-                k={1}
-              />{" "}
+                body={
+                  "Choose a track to compete in and register your team."
+                }
+              />
             </div>
             <div className={styles.line}></div>
 
