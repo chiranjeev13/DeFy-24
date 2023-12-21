@@ -70,9 +70,7 @@ function ScrollSection() {
               <Eventcard
                 title={"REGISTRATIONS OPEN:"}
                 timeline={"5th Dec,2023"}
-                body={
-                  "Choose a track to compete in and register your team."
-                }
+                body={"Choose a track to compete in and register your team."}
               />
             </div>
             <div className={styles.line}></div>
@@ -80,7 +78,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"IDEATION ROUND:"}
-                timeline={"5th Dec,2023 - 31st Dec,2023"}
+                timeline={"5th Dec,2023 - 5th Jan,2024"}
                 body={
                   "Submit your Web3 Startup Idea using the DeFy template in the Ideation round. The template and rulebook can be found on Devfolio when you register."
                 }
@@ -91,7 +89,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"SUBMISSIONS CLOSE:"}
-                timeline={"25th Dec,2023"}
+                timeline={"5th Jan,2024"}
                 body={
                   "Sit back and relax while the judges go through your submissions."
                 }
@@ -198,7 +196,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`5th Dec, 2023 - 31st Dec, 2023`]}
+                sequence={[`5th Dec, 2023 - 5th Jan, 2024`]}
                 speed={1}
               />
             </div>
@@ -249,7 +247,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`31st Dec, 2023`]}
+                sequence={[`5th Jan, 2024`]}
                 speed={1}
               />
             </div>
@@ -300,7 +298,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`5th Jan, 2024`]}
+                sequence={[`8th Jan, 2024`]}
                 speed={1}
               />
             </div>
