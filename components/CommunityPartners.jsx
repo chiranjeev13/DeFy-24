@@ -45,7 +45,7 @@ function CommunityPartners() {
                                 key={index}
                                 src={item}
                                 alt={`Partner Logo ${item}`}
-                                className="w-40 h-auto transform scale-90 transition-transform duration-300 mx-4 flex items-center justify-center shadow-inner"
+                                className="w-40 h-auto transform scale-90 object-contain transition-transform duration-300 mx-4 flex items-center justify-center shadow-inner  "
                             />
                         </div>
                     </div>
@@ -60,7 +60,7 @@ function CommunityPartners() {
                                 key={index}
                                 src={item}
                                 alt={`Partner Logo ${item}`}
-                                className="w-40 h-auto transform scale-90 transition-transform duration-300 mx-4 flex items-center justify-center shadow-inner"
+                                className="w-40 h-auto transform scale-90 object-contain  transition-transform duration-300 mx-4 flex items-center justify-center shadow-inner "
                             />
                         </div>
                     </div>
