@@ -4,7 +4,7 @@ import devfolio from "../assets/Devfolio.svg";
 import polygon from "../assets/Polygon.svg";
 import replit from "../assets/replit.svg";
 import qon2 from "../assets/qoneqt.svg";
-import zk from "../assets/zk7.svg";
+import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ const Sponsorship = () => {
           <Image
             src={zk}
             alt="ZKWALLET LOGO"
-            className="mt-4 w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+            className="mt-4 w-full h-auto transform scale-150 transition-transform duration-300 flex items-center justify-center shadow-inner"
           />
 
           <div className="absolute inset-0 transition-opacity duration-300"></div>
