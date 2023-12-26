@@ -6,6 +6,7 @@ import replit from "../assets/replit.svg";
 import qon2 from "../assets/qoneqt.svg";
 import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
+import solscan from "../assets/solscan.png";
 import Image from "next/image";
 
 const Sponsorship = () => {
@@ -44,7 +45,21 @@ const Sponsorship = () => {
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
       </div>
-
+      <div className={styles.bodyy}>Security Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://solidityscan.com/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={solscan}
+            alt="SOLSCAN LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
       <div className={styles.bodyy}>CATEGORY SPONSORS</div>
       <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8 gap-y-[6rem] py-12 px-4 mb-6 ">
         <a
