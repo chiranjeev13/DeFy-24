@@ -4,6 +4,7 @@ import devfolio from "../assets/Devfolio.svg";
 import polygon from "../assets/Polygon.svg";
 import replit from "../assets/replit.svg";
 import qon2 from "../assets/qoneqt.svg";
+import quicknode from "../assets/quicknode.svg";
 import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
 import solscan from "../assets/solscan.png";
@@ -76,6 +77,22 @@ const Sponsorship = () => {
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
       </div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8 gap-y-[6rem] py-12 px-4 mb-6 ">
+        <a
+          href="https://www.quicknode.com/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={quicknode}
+            alt="quicknode LOGO"
+            className="mt-4 w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-[6rem] py-12 px-4 mb-6 ">
         <a
           href="https://polygon.technology/"
