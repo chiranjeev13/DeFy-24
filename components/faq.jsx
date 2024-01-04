@@ -36,7 +36,7 @@ const FAQ = () => {
     "Absolutely! This hackathon encourages collaboration, so we expect teams to be comprised of both tech-oriented and business-oriented participants. Make sure you have both kinds in your team.",
     "Yes. Participants should not only showcase technical proficiency in their prototypes but also demonstrate a clear understanding of the market and the business potential of their ideas.",
     "The prize pool sits at 1 Lakh+ Rupees, consisting cash rewards, tokens and goodies!",
-    "Registrations for the Ideation round are free of cost to all. A minimal admission fee will be charged for the offline 3 day Hackathon event.",
+    "Registrations are free of cost to all.",
     "While DeFy 24 is free-of-charge to participants thanks to our sponsors and partners, the event cannot cover travel or other expenses for attendees.",
   ];
 
