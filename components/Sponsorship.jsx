@@ -8,6 +8,7 @@ import quicknode from "../assets/quicknode.svg";
 import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
 import solscan from "../assets/solscan.png";
+import mtutor from "../assets/mtutor.png";
 import Image from "next/image";
 
 const Sponsorship = () => {
@@ -31,7 +32,7 @@ const Sponsorship = () => {
       </div>
 
       <div className={styles.bodyy}>CO-SPONSOR</div>
-      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-[6rem] gap-x-[6rem] px-4  ">
         <a
           href="https://www.gizmolab.io"
           target="_blank"
@@ -40,7 +41,20 @@ const Sponsorship = () => {
           <Image
             src={gizmolab}
             alt="GIZMOLAB LOGO"
-            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner p-4"
+          />
+
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+        <a
+          href="https://www.m-tutor.com/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={mtutor}
+            alt="MTUTOR LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner md:p-28"
           />
 
           <div className="absolute inset-0 transition-opacity duration-300"></div>

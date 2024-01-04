@@ -78,7 +78,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"IDEATION ROUND:"}
-                timeline={"5th Dec,2023 - 5th Jan,2024"}
+                timeline={"5th Dec,2023 - 15th Jan,2024"}
                 body={
                   "Submit your Web3 Startup Idea using the DeFy template in the Ideation round. The template and rulebook can be found on Devfolio when you register."
                 }
@@ -89,7 +89,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"SUBMISSIONS CLOSE:"}
-                timeline={"5th Jan,2024"}
+                timeline={"15th Jan,2024"}
                 body={
                   "Sit back and relax while the judges go through your submissions."
                 }
@@ -196,7 +196,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`5th Dec, 2023 - 5th Jan, 2024`]}
+                sequence={[`5th Dec, 2023 - 15th Jan, 2024`]}
                 speed={1}
               />
             </div>
@@ -247,7 +247,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`5th Jan, 2024`]}
+                sequence={[`15th Jan, 2024`]}
                 speed={1}
               />
             </div>
