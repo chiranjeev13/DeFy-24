@@ -199,7 +199,7 @@ const Sponsorship = () => {
       <div className={styles.bodyy}>Insights Partner</div>
       <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
         <a
-          href="https://finecon.io/"
+          href="https://www.linkedin.com/company/finecondotin"
           target="_blank"
           className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
         >
