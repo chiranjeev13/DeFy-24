@@ -9,6 +9,11 @@ import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
 import solscan from "../assets/solscan.png";
 import mtutor from "../assets/mtutor.png";
+import mediapartner from "../assets/mediapartner.png"
+import knowledgepartner from "../assets/knowledgepartner.png"
+import finecon from "../assets/finecoin.png"
+import qa from "../assets/qa.png";
+import qaw from "../assets/qaw.png";
 import Image from "next/image";
 
 const Sponsorship = () => {
@@ -142,6 +147,66 @@ const Sponsorship = () => {
             src={devfolio}
             alt="DEVFOLIO LOGO"
             className="mt-4 w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+      <div className={styles.bodyy}>Web3 Diligence Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://www.quillaudits.com/smart-contract-audit"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={qa}
+            alt="Quill Audits LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+      <div className={styles.bodyy}>Media Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://startupnews.fyi/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={mediapartner}
+            alt="Startup News FYI LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+      <div className={styles.bodyy}>Knowledge Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://chennai.tie.org/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={knowledgepartner}
+            alt="TIE Chennai LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+      <div className={styles.bodyy}>Insights Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://finecon.io/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={finecon}
+            alt="Finecon LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
           />
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
