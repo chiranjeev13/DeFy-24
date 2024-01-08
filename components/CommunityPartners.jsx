@@ -26,6 +26,8 @@ import vitrendz from "../assets/vitrendz.png";
 import tpg from "../assets/730.png";
 import HC from "../assets/HC.png";
 import ecellm from "../assets/ecellm.png";
+import capx from "../assets/capx.png";
+import vaunt from "../assets/vaunt.png";
 
 function CommunityPartners() {
   const partnerLogos = [
@@ -53,6 +55,8 @@ function CommunityPartners() {
     web3meetups,
     HC,
     ecellm,
+    capx,
+    vaunt
   ];
 
   const logosLine1 = partnerLogos.slice(0, partnerLogos.length / 2);
