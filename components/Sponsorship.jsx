@@ -10,7 +10,7 @@ import gizmolab from "../assets/gizmolab7.svg";
 import solscan from "../assets/solscan.png";
 import mtutor from "../assets/mtutor.png";
 import mediapartner from "../assets/mediapartner.png"
-import knowledgepartner from "../assets/knowledgepartner.png"
+import knowledgepartner from "../assets/tie.png"
 import finecon from "../assets/finecoin.png"
 import qa from "../assets/qa.png";
 import qaw from "../assets/qaw.png";
