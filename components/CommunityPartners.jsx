@@ -25,6 +25,7 @@ import polygonguildjaipur from "../assets/polygonguildjaipur.jpeg";
 import vitrendz from "../assets/vitrendz.png";
 import tpg from "../assets/730.png";
 import HC from "../assets/HC.png";
+import ecellm from "../assets/ecellm.png";
 
 function CommunityPartners() {
   const partnerLogos = [
@@ -51,6 +52,7 @@ function CommunityPartners() {
     web3kerala,
     web3meetups,
     HC,
+    ecellm,
   ];
 
   const logosLine1 = partnerLogos.slice(0, partnerLogos.length / 2);
