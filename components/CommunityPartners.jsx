@@ -28,6 +28,7 @@ import HC from "../assets/HC.png";
 import ecellm from "../assets/ecellm.png";
 import capx from "../assets/capx.png";
 import vaunt from "../assets/vaunt.png";
+import plutope from "../assets/plutoPe.jpg";
 
 function CommunityPartners() {
   const partnerLogos = [
@@ -56,7 +57,8 @@ function CommunityPartners() {
     HC,
     ecellm,
     capx,
-    vaunt
+    vaunt,
+    plutope,
   ];
 
   const logosLine1 = partnerLogos.slice(0, partnerLogos.length / 2);
