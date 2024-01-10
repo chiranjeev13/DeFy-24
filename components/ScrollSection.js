@@ -100,7 +100,7 @@ function ScrollSection() {
             <div className="scroll-section">
               <Eventcard
                 title={"SHORTLIST ANNOUNCEMENT:"}
-                timeline={"8th Jan,2024"}
+                timeline={"17th Jan,2024"}
                 body={
                   "The Top 30 teams, who will be progressing to the Hackathon phase, shall be announced. These teams shall be invited to the main event spanning 3 days, happening offline at VIT Chennai."
                 }
@@ -298,7 +298,7 @@ function ScrollSection() {
               />
               <TypeAnimation
                 className={stylesb.color}
-                sequence={[`8th Jan, 2024`]}
+                sequence={[`17th Jan, 2024`]}
                 speed={1}
               />
             </div>
