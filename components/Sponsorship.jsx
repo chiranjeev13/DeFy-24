@@ -9,10 +9,11 @@ import zk from "../assets/zkwlogo.png";
 import gizmolab from "../assets/gizmolab7.svg";
 import solscan from "../assets/solscan.png";
 import mtutor from "../assets/mtutor.png";
-import mediapartner from "../assets/mediapartner.png"
-import knowledgepartner from "../assets/tie.png"
-import finecon from "../assets/finecoin.png"
+import mediapartner from "../assets/mediapartner.png";
+import knowledgepartner from "../assets/tie.png";
+import finecon from "../assets/finecoin.png";
 import qa from "../assets/qa.png";
+import krypc from "../assets/krypc.svg";
 import qaw from "../assets/qaw.png";
 import Image from "next/image";
 
@@ -65,16 +66,16 @@ const Sponsorship = () => {
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
       </div>
-      <div className={styles.bodyy}>Security Partner</div>
+      <div className={styles.bodyy}>TRACK SPONSOR</div>
       <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
         <a
-          href="https://solidityscan.com/"
+          href="https://krypcore.com"
           target="_blank"
           className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
         >
           <Image
-            src={solscan}
-            alt="SOLSCAN LOGO"
+            src={krypc}
+            alt="krypc LOGO"
             className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
           />
           <div className="absolute inset-0 transition-opacity duration-300"></div>
@@ -151,6 +152,23 @@ const Sponsorship = () => {
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
       </div>
+
+      <div className={styles.bodyy}>Security Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://solidityscan.com/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={solscan}
+            alt="SOLSCAN LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+
       <div className={styles.bodyy}>Web3 Diligence Partner</div>
       <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
         <a
