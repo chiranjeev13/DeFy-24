@@ -28,7 +28,10 @@ function Header() {
                 . <Example symbol={"HOME"} />
               </div>
             </a>
-            <a href="https://chat.whatsapp.com/FTwIBDMPZCB3n1aTqpokCi">
+            <a
+              href="https://chat.whatsapp.com/FTwIBDMPZCB3n1aTqpokCi"
+              target="_blank"
+            >
               <div
                 className={styles.buttons}
                 onMouseEnter={() => play && play()}
@@ -61,15 +64,20 @@ function Header() {
               </div>
             </a>
           </div>
-          <div className={styles.chat}>
-            <Image src={chat} />
-            <div
-              className={styles.chat_text}
-              onMouseEnter={() => play && play()}
-            >
-              <Example symbol={"EVENT ASSISTANCE"} />
+          <a
+            href="https://chat.whatsapp.com/FTwIBDMPZCB3n1aTqpokCi"
+            target="_blank"
+          >
+            <div className={styles.chat}>
+              <Image src={chat} />
+              <div
+                className={styles.chat_text}
+                onMouseEnter={() => play && play()}
+              >
+                <Example symbol={"EVENT ASSISTANCE"} />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </>
