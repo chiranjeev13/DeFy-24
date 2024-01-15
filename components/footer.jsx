@@ -36,7 +36,7 @@ const footer = () => {
         </div>
         <div class="mb-2 mt-8 w-full [border-bottom:1.7px_solid_rgb(0,_0,_0)]"></div>
         <div class="flex flex-row-reverse justify-between max-[991px]:items-center max-[767px]:flex-col max-[767px]:items-start max-[479px]:flex-col">
-          <div class="text-center font-semibold max-[991px]:ml-0 max-[991px]:mr-0 max-[991px]:py-1 max-[479px]:mb-4 sm:text-center">
+          <div class="text-center mb-6 font-semibold max-[991px]:ml-0 max-[991px]:mr-0 max-[991px]:py-1 max-[479px]:mb-4 sm:text-center">
             <a
               href="mailto:chennai.daocommunity@vit.ac.in"
               class="flex py-1.5 pl-0 pr-6 font-normal text-[#bcb9b9] transition hover:text-[#99ff52] sm:py-2 sm:pr-6 lg:pr-12"
@@ -52,7 +52,6 @@ const footer = () => {
               <FaInstagram size="2rem" className="inline-block mr-2" />
               {"DeFy24's Instagram"}
             </a>
-
             <a
               href="https://x.com/defy_2024"
               target="_blank"
@@ -62,8 +61,9 @@ const footer = () => {
               {"DeFy24's Twitter"}
             </a>
           </div>
+          <div class="mb-2 mt-4 w-4 [border-bottom:1.7px_solid_rgb(0,_0,_0)]"></div>
 
-          <div class="max-[991px]:flex-none mt-20">
+          <div class="max-[991px]:flex-none mt-24">
             <Image
               style={{ margin: "-9rem -2rem -4rem -1rem" }}
               src={clubs}
