@@ -40,7 +40,7 @@ const Sponsorship = () => {
       </div>
 
       <div className={styles.bodyy}>CO-SPONSOR</div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-[6rem] gap-x-[6rem] px-4  ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-[6rem] gap-x-[6rem] px-4  ">
         <a
           href="https://www.gizmolab.io"
           target="_blank"
