@@ -17,7 +17,7 @@ import krypc from "../assets/krypc.svg";
 import qaw from "../assets/qaw.png";
 import plutopeCrypto from "../assets/plutopeCrypto.svg";
 import Image from "next/image";
-import moi from "../assets/moi.png";
+import moi from "../assets/moiwhite.png";
 
 const Sponsorship = () => {
   return (
