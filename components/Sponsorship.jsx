@@ -15,6 +15,7 @@ import finecon from "../assets/finecoin.png"
 import qa from "../assets/qa.png";
 import qaw from "../assets/qaw.png";
 import Image from "next/image";
+import moi from "../assets/moi.png";
 
 const Sponsorship = () => {
   return (
@@ -60,6 +61,19 @@ const Sponsorship = () => {
             src={mtutor}
             alt="MTUTOR LOGO"
             className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner md:p-28"
+          />
+
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+        <a
+          href="https://moi.technology/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={moi}
+            alt="MOI LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner p-4"
           />
 
           <div className="absolute inset-0 transition-opacity duration-300"></div>
