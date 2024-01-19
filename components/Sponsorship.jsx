@@ -19,6 +19,7 @@ import plutopeCrypto from "../assets/plutopeCrypto.svg";
 import Image from "next/image";
 import moi from "../assets/moiwhite.png";
 import Decoders from "../assets/Decoders.png";
+import tribe  from "../assets/tribefont.png";
 
 const Sponsorship = () => {
   return (
@@ -275,6 +276,22 @@ const Sponsorship = () => {
           <div className="absolute inset-0 transition-opacity duration-300"></div>
         </a>
       </div>
+      <div className={styles.bodyy}>Academy Partner</div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-[6rem]  px-4  ">
+        <a
+          href="https://www.tribeacademy.in/"
+          target="_blank"
+          className="relative overflow-hidden group hover:shadow-xl transition duration-300 ease-in  "
+        >
+          <Image
+            src={tribe}
+            alt="Tribe Academy LOGO"
+            className="w-full h-auto transform scale-90 transition-transform duration-300 flex items-center justify-center shadow-inner"
+          />
+          <div className="absolute inset-0 transition-opacity duration-300"></div>
+        </a>
+      </div>
+      
       {/* <div className={styles.bodyy}>OUR SPONSORS</div> */}
 
       {/* <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-[6rem] py-12 px-4 mb-6 ">
