@@ -13,7 +13,7 @@ function TickerTape() {
             <div className={styles.body_w}>
               {" "}
               DEFY 24, WHERE WEB3 MEETS BUSINESS • A 36 HOUR
-              COLLEGE-LEVEL HACK FOR FUTURE WEB3 STARTUP FOUNDERS • REGISTER NOW
+              COLLEGE-LEVEL HACK FOR FUTURE WEB3 STARTUP FOUNDERS • UNTIL NEXT YEAR. BIGGER. BETTER. BOLDLY INNOVATIVE. SEE YOU THEN!
             </div>
           </div>
         ))}
