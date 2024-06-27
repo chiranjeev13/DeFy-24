@@ -11,7 +11,7 @@ function Video() {
     <div className={styles.videoWrapper}>
       <MediaPlayer
         className={styles.video}
-        src=video
+        src={video}
         muted={true}
         loop={true}
         autoplay={true}
